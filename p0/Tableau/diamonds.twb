@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10000.16.1004.1720                               -->
+<workbook source-build='10.0.2 (10000.16.1004.1720)' source-platform='win' version='10.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='diamonds' inline='true' name='federated.0vw4x0u0gcsqlb1a86rq60gli7ov' version='10.0'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='diamonds' name='textscan.06eghoa1y4ky9t10adldr1wuiy0s'>
+            <connection class='textscan' directory='C:/Users/KK/Downloads/Predictive' filename='diamonds.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='diamonds.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_ZA'>
+            <column datatype='string' name=',carat,cut,cut_ord,color,clarity,clarity_ord,price' />
+            <column datatype='string' name=',carat,cut,cut_ord,color,clarity,clarity_ord' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.06eghoa1y4ky9t10adldr1wuiy0s' name='diamonds.csv' table='[diamonds#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_ZA'>
+              <column datatype='string' name=',carat,cut,cut_ord,color,clarity,clarity_ord,price' ordinal='0' />
+            </columns>
+          </relation>
+          <relation connection='textscan.06eghoa1y4ky9t10adldr1wuiy0s' name='new-diamonds.csv' table='[new-diamonds#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_ZA'>
+              <column datatype='string' name=',carat,cut,cut_ord,color,clarity,clarity_ord' ordinal='0' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>,carat,cut,cut_ord,color,clarity,clarity_ord,price</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[,carat,cut,cut_ord,color,clarity,clarity_ord,price]</local-name>
+            <parent-name>[diamonds.csv+]</parent-name>
+            <remote-alias>,carat,cut,cut_ord,color,clarity,clarity_ord,price</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>,carat,cut,cut_ord,color,clarity,clarity_ord</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[,carat,cut,cut_ord,color,clarity,clarity_ord]</local-name>
+            <parent-name>[diamonds.csv+]</parent-name>
+            <remote-alias>,carat,cut,cut_ord,color,clarity,clarity_ord</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[diamonds.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='New_ID' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='9' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='New_Carat' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='10' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord], &quot;,&quot;, 2 ) )' />
+      </column>
+      <column caption='New_Cut' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord - Split 3]' role='dimension' type='nominal' user:SplitFieldIndex='11' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord], &quot;,&quot;, 3 ) )' />
+      </column>
+      <column caption='New_Cut_ord' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord - Split 4]' role='dimension' type='nominal' user:SplitFieldIndex='12' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord], &quot;,&quot;, 4 ) )' />
+      </column>
+      <column caption='New_Colour' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord - Split 5]' role='dimension' type='nominal' user:SplitFieldIndex='13' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord], &quot;,&quot;, 5 ) )' />
+      </column>
+      <column caption='New_Clarity' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord - Split 6]' role='dimension' type='nominal' user:SplitFieldIndex='14' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord], &quot;,&quot;, 6 ) )' />
+      </column>
+      <column caption='New_Clarity_ord' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord - Split 7]' role='dimension' type='nominal' user:SplitFieldIndex='15' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord], &quot;,&quot;, 7 ) )' />
+      </column>
+      <column caption='ID' datatype='integer' name='[,carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord,price]'>
+        <calculation class='tableau' formula='INT( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord,price], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='Carat' datatype='real' name='[,carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord,price]'>
+        <calculation class='tableau' formula='FLOAT( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord,price], &quot;,&quot;, 2 ) )' />
+      </column>
+      <column caption='Cut' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord,price]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord,price], &quot;,&quot;, 3 ) )' />
+      </column>
+      <column caption='Cut_ord' datatype='integer' name='[,carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 4]' role='dimension' type='ordinal' user:SplitFieldIndex='4' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord,price]'>
+        <calculation class='tableau' formula='INT( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord,price], &quot;,&quot;, 4 ) )' />
+      </column>
+      <column caption='Colour' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 5]' role='dimension' type='nominal' user:SplitFieldIndex='5' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord,price]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord,price], &quot;,&quot;, 5 ) )' />
+      </column>
+      <column caption='Clarity' datatype='string' name='[,carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 6]' role='dimension' type='nominal' user:SplitFieldIndex='6' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord,price]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord,price], &quot;,&quot;, 6 ) )' />
+      </column>
+      <column caption='Clarity_ord' datatype='real' name='[,carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 7]' role='dimension' type='ordinal' user:SplitFieldIndex='7' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord,price]'>
+        <calculation class='tableau' formula='FLOAT( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord,price], &quot;,&quot;, 7 ) )' />
+      </column>
+      <column caption='Price' datatype='integer' name='[,carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 8]' role='dimension' type='ordinal' user:SplitFieldIndex='8' user:SplitFieldOrigin='[federated.0vw4x0u0gcsqlb1a86rq60gli7ov].[,carat,cut,cut_ord,color,clarity,clarity_ord,price]'>
+        <calculation class='tableau' formula='INT( SPLIT( [,carat,cut,cut_ord,color,clarity,clarity_ord,price], &quot;,&quot;, 8 ) )' />
+      </column>
+      <column caption=',Carat,Cut,Cut Ord,Color,Clarity,Clarity Ord,Price' datatype='string' hidden='true' name='[,carat,cut,cut_ord,color,clarity,clarity_ord,price]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[,carat,cut,cut_ord,color,clarity,clarity_ord]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Source' datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.784232' measure-ordering='alphabetic' measure-percentage='0.215768' rowDisplayCount='70000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 1' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 2' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 3' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 4' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 5' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 6' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 7' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord,price - Split 8' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord - Split 1' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord - Split 2' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord - Split 3' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord - Split 4' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord - Split 5' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord - Split 6' />
+        <field-sort-custom-order field=',carat,cut,cut_ord,color,clarity,clarity_ord - Split 7' />
+        <field-sort-custom-order field='Table Name' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7EAAAOxAGVKw4b
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

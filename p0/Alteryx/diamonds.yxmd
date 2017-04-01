@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">..\files\diamonds.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>diamonds.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="carat" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="cut" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="cut_ord" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="color" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="clarity" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="clarity_ord" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="price" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">..\files\new-diamonds.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>new-diamonds.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="carat" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="cut" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="cut_ord" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="color" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="clarity" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="clarity_ord" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[carat]*8413 + 158.1*[cut_ord] + 454*[clarity_ord] - 5269&#xA;//Price = -5,269 + 8,413 x Carat + 158.1 x Cut + 454 x Clarity" field="predicted_price" size="19.6" type="FixedDecimal" />
+            <FormulaField expression="&quot;diamonds&quot;" field="source" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>predicted_price = [carat]*8413 + 158.1*[cut_ord] + 454*[clarity_ord] - 5269
+//Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[carat]*8413 + 158.1*[cut_ord] + 454*[clarity_ord] - 5269&#xA;//Price = -5,269 + 8,413 x Carat + 158.1 x Cut + 454 x Clarity" field="predicted_price" size="19.6" type="FixedDecimal" />
+            <FormulaField expression="&quot;new&quot;" field="source" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>predicted_price = [carat]*8413 + 158.1*[cut_ord] + 454*[clarity_ord] - 5269
+//Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Field_1" selected="True" />
+            <Field field="carat" selected="True" />
+            <Field field="cut" selected="True" />
+            <Field field="cut_ord" selected="True" />
+            <Field field="color" selected="True" />
+            <Field field="clarity" selected="True" />
+            <Field field="clarity_ord" selected="True" />
+            <Field field="price" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Int32" />
+            <Field name="carat" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Double" />
+            <Field name="cut" size="9" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="String" />
+            <Field name="cut_ord" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Byte" />
+            <Field name="color" size="1" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="String" />
+            <Field name="clarity" size="4" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="String" />
+            <Field name="clarity_ord" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Byte" />
+            <Field name="price" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="174" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Field_1" selected="True" />
+            <Field field="carat" selected="True" />
+            <Field field="cut" selected="True" />
+            <Field field="cut_ord" selected="True" />
+            <Field field="color" selected="True" />
+            <Field field="clarity" selected="True" />
+            <Field field="clarity_ord" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="Int16" />
+            <Field name="carat" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="Double" />
+            <Field name="cut" size="9" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="String" />
+            <Field name="cut_ord" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="Byte" />
+            <Field name="color" size="1" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="String" />
+            <Field name="clarity" size="4" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="String" />
+            <Field name="clarity_ord" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="438" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="predicted_price" action="Sum" rename="Sum_predicted_price" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="546" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sum_predicted_price]*.7" field="Bid" size="19.6" type="FixedDecimal" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Bid = [Sum_predicted_price]*.7
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="666" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_aa84e0d58fd741489c21fb335caa5c41_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="546" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">..\files\diamonds_alteryx.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>diamonds_alteryx.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="438" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="1206" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings>
+        <Position x="1398" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Field_1=True,carat=True,cut=True,cut_ord=True,color=True,clarity=True,clarity_ord=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings>
+        <Position x="702" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="FrequencyFields">&lt;Field field="Field_1" selected="True" /&gt;&lt;Field field="carat" selected="True" /&gt;&lt;Field field="cut" selected="True" /&gt;&lt;Field field="cut_ord" selected="True" /&gt;&lt;Field field="color" selected="True" /&gt;&lt;Field field="clarity" selected="True" /&gt;&lt;Field field="clarity_ord" selected="True" /&gt;&lt;Field field="*Unknown" selected="False" /&gt;</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Frequency.yxmc" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FieldInfo.FieldInfo">
+        <Position x="1206" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFieldInfo" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1314" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_c8b12838a94f477dbc52c54030a7f47a_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="954" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_0a2699c7cbf74b198e8c2a374cdfb7ee_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="954" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_e91cb9a40183436fb27a19b1db546614_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1206" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_bd8a1c67f78b4637812c6ff54934b834_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1314" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_8c3184c2fa6e4315ae9cd4641f8a2d94_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1494" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_07f60d624887451a833077591d50dcf8_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1494" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_84ce010830ad49ba8c1116416e0b24ad_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1494" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_2801b933f9854698a612fc3c4b79eb12_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="24" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Reports" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Interactive" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Data" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Report" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Interactive" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="True" />
+    <DisableAllOutput value="True" />
+    <ShowAllMacroMessages value="True" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>diamonds</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>Kacper Ksieski</Author>
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
