@@ -309,18 +309,14 @@ Table=questions2and3</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Expression>!([budget] = 0 or
-[revenue] = 0 or
-[budget_adj] = 0 or
+          <Expression>!([budget_adj] = 0 or
 [revenue_adj] = 0)</Expression>
           <Mode>Custom</Mode>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>!([budget] = 0 or
-[revenue] = 0 or
-[budget_adj] = 0 or
-[reven...</DefaultAnnotationText>
+          <DefaultAnnotationText>!([budget_adj] = 0 or
+[revenue_adj] = 0)</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -332,7 +328,7 @@ Table=questions2and3</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23620_d57569bae2c24c918732c3868ba85c73_\Engine_18140_3c587c3df5504037839adefabaa76841_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18992_c3c531fc76794058a174afa3882d86aa_\Engine_18140_cef62b129882484faa64d6e89701d4f6_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -348,7 +344,7 @@ Table=questions2and3</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23620_d57569bae2c24c918732c3868ba85c73_\Engine_18140_b25a3bc31a9e4597bfabc3ef8843aee5_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18992_c3c531fc76794058a174afa3882d86aa_\Engine_18140_9d41cf7c215c433388fbf07d05d4734f_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />

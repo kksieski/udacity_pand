@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="336" height="24" />
+        <Position x="54" y="57.99988" width="336" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -23,7 +23,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="66" y="234" width="276" height="60" />
+        <Position x="66" y="237.9998" width="276" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -43,7 +43,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="402" y="54" width="288" height="24" />
+        <Position x="402" y="57.99988" width="288" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -63,7 +63,7 @@
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="714" y="54" width="708" height="24" />
+        <Position x="714" y="57.99988" width="708" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -81,32 +81,14 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="49">
-      <GuiSettings>
-        <Position x="630" y="126" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="estimation pct">70</Value>
-          <Value name="validation pct">30</Value>
-          <Value name="rand seed">1</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
-    </Node>
     <Node ToolID="71">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="114" />
+        <Position x="54" y="117.9998" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\credit-data-training.xlsx|||`Sheet1$`</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">..\files\credit-data-training.xlsx|||`Sheet1$`</File>
           <FormatSpecificOptions>
             <FirstRowData>False</FirstRowData>
             <ImportLine>1</ImportLine>
@@ -118,9 +100,6 @@
 Table=`Sheet1$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Credit-Application-Result" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\credit-data-training.xlsx|||`Sheet1$`" type="V_String" />
@@ -148,226 +127,21 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
     </Node>
-    <Node ToolID="72">
-      <GuiSettings>
-        <Position x="810" y="126" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="Model Name" />
-          <Value name="Y Var" />
-          <Value name="X Vars" />
-          <Value name="Link">logit</Value>
-          <Value name="Use Weights">False</Value>
-          <Value name="Weight Vec" />
-          <Value name="graph.resolution">1x</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Logistic_Regression.yxmc" />
-    </Node>
-    <Node ToolID="73">
-      <GuiSettings>
-        <Position x="810" y="282" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="Model Name" />
-          <Value name="Y Var" />
-          <Value name="X Vars" />
-          <Value name="Num Trees">500</Value>
-          <Value name="Custom Num Vars">False</Value>
-          <Value name="Num Vars">3</Value>
-          <Value name="model.size">False</Value>
-          <Value name="total.nodes">100</Value>
-          <Value name="max.depth">10</Value>
-          <Value name="node.size">5</Value>
-          <Value name="replace">True</Value>
-          <Value name="samp.rate">100</Value>
-          <Value name="inches">True</Value>
-          <Value name="in.w">5.50</Value>
-          <Value name="in.h">5.50</Value>
-          <Value name="centimeters">False</Value>
-          <Value name="cm.w">13.00</Value>
-          <Value name="cm.h">14.95</Value>
-          <Value name="graph.resolution">1x</Value>
-          <Value name="pointsize">10</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
-    </Node>
-    <Node ToolID="74">
-      <GuiSettings>
-        <Position x="810" y="198" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="Model Name" />
-          <Value name="Y Var" />
-          <Value name="X Vars" />
-          <Value name="use.weights">False</Value>
-          <Value name="select.weights" />
-          <Value name="cp">Auto</Value>
-          <Value name="select.type">False</Value>
-          <Value name="classification">True</Value>
-          <Value name="use.gini">True</Value>
-          <Value name="use.information">False</Value>
-          <Value name="regression">False</Value>
-          <Value name="min.split">20</Value>
-          <Value name="min.bucket">7</Value>
-          <Value name="usesurrogate.0">False</Value>
-          <Value name="usesurrogate.1">False</Value>
-          <Value name="usesurrogate.2">True</Value>
-          <Value name="total.correct">True</Value>
-          <Value name="percent.correct">False</Value>
-          <Value name="xval.folds">10</Value>
-          <Value name="max.depth">20</Value>
-          <Value name="max.bins">Default</Value>
-          <Value name="tree.plot">True</Value>
-          <Value name="Counts">False</Value>
-          <Value name="Proportions">True</Value>
-          <Value name="Branch Dist">True</Value>
-          <Value name="tree.inches">True</Value>
-          <Value name="tree.in.w">5.50</Value>
-          <Value name="tree.in.h">5.50</Value>
-          <Value name="tree.centimeters">False</Value>
-          <Value name="tree.cm.w">13.00</Value>
-          <Value name="tree.cm.h">14.95</Value>
-          <Value name="tree.graph.resolution">1x</Value>
-          <Value name="tree.pointsize">8</Value>
-          <Value name="prune.plot">False</Value>
-          <Value name="prune.inches">True</Value>
-          <Value name="prune.in.w">5.50</Value>
-          <Value name="prune.in.h">5.50</Value>
-          <Value name="prune.centimeters">False</Value>
-          <Value name="prune.cm.w">13.00</Value>
-          <Value name="prune.cm.h">14.95</Value>
-          <Value name="prune.graph.resolution">1x</Value>
-          <Value name="prune.pointsize">10</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Decision_Tree.yxmc" />
-    </Node>
-    <Node ToolID="75">
-      <GuiSettings>
-        <Position x="810" y="366" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="model.name" />
-          <Value name="select.target" />
-          <Value name="select.predictors" />
-          <Value name="use.weights">False</Value>
-          <Value name="select.weights" />
-          <Value name="marginal.plots">False</Value>
-          <Value name="plot.min.importance">2.5</Value>
-          <Value name="type.distribution">False</Value>
-          <Value name="type.continuous">True</Value>
-          <Value name="dist.gaussian">True</Value>
-          <Value name="dist.laplace">False</Value>
-          <Value name="dist.t">False</Value>
-          <Value name="t.df">4</Value>
-          <Value name="type.count">False</Value>
-          <Value name="type.binomial">False</Value>
-          <Value name="dist.bernoulli">True</Value>
-          <Value name="dist.adaboost">False</Value>
-          <Value name="type.multinomial">False</Value>
-          <Value name="n.trees">4000</Value>
-          <Value name="assess.cv">True</Value>
-          <Value name="num.folds">5</Value>
-          <Value name="n.cores">1</Value>
-          <Value name="assess.test">False</Value>
-          <Value name="train.fraction">50.0</Value>
-          <Value name="assess.oob">False</Value>
-          <Value name="bag.fraction">50.0</Value>
-          <Value name="shrinkage">0.0020</Value>
-          <Value name="interaction.depth">1</Value>
-          <Value name="n.minobsinnode">10</Value>
-          <Value name="rand.seed">1</Value>
-          <Value name="inches">True</Value>
-          <Value name="in.w">5.50</Value>
-          <Value name="in.h">5.50</Value>
-          <Value name="centimeters">False</Value>
-          <Value name="cm.w">13.00</Value>
-          <Value name="cm.h">14.95</Value>
-          <Value name="graph.resolution">1x</Value>
-          <Value name="pointsize">10</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
-    </Node>
-    <Node ToolID="76">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="990" y="126" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <ByName_ErrorMode>Warning</ByName_ErrorMode>
-          <ByName_OutputMode>All</ByName_OutputMode>
-          <Mode>ByName</Mode>
-          <SetOutputOrder value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
-    </Node>
-    <Node ToolID="77">
-      <GuiSettings>
-        <Position x="1338" y="174" />
-      </GuiSettings>
-      <Properties>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Score.yxmc" />
-    </Node>
-    <Node ToolID="78">
-      <GuiSettings>
-        <Position x="1110" y="174" />
-      </GuiSettings>
-      <Properties>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Model+Comparison\Model Comparison.yxmc" />
-    </Node>
     <Node ToolID="79">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="174" y="114" />
+        <Position x="174" y="117.9998" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="False" />
           <SelectFields>
+            <SelectField field="Guarantors" selected="False" />
+            <SelectField field="Duration-in-Current-address" selected="False" />
+            <SelectField field="Concurrent-Credits" selected="False" />
+            <SelectField field="Occupation" selected="False" />
+            <SelectField field="No-of-dependents" selected="False" />
+            <SelectField field="Telephone" selected="False" />
+            <SelectField field="Foreign-Worker" selected="False" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -379,21 +153,1581 @@ Table=`Sheet1$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="80">
-      <GuiSettings>
-        <Position x="366" y="210" />
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="117.9998" />
       </GuiSettings>
       <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([Age-years]) THEN 33 ELSE [Age-years] ENDIF" field="Age-years" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Age-years = IF IsNull([Age-years]) THEN 33 ELSE [Age-years] ENDIF
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="124">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="126" y="313.9999" width="236.777" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Field Summary Investigation Container</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+      <ChildNodes>
+        <Node ToolID="107">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="199" y="369.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="Credit-Application-Result" selected="False" />
+                <SelectField field="Account-Balance" selected="False" />
+                <SelectField field="Duration-of-Credit-Month" selected="False" />
+                <SelectField field="Payment-Status-of-Previous-Credit" selected="False" />
+                <SelectField field="Purpose" selected="False" />
+                <SelectField field="Credit-Amount" selected="False" />
+                <SelectField field="Value-Savings-Stocks" selected="False" />
+                <SelectField field="Length-of-current-employment" selected="False" />
+                <SelectField field="Instalment-per-cent" selected="False" />
+                <SelectField field="Guarantors" selected="True" />
+                <SelectField field="Most-valuable-available-asset" selected="False" />
+                <SelectField field="Age-years" selected="False" />
+                <SelectField field="Concurrent-Credits" selected="True" />
+                <SelectField field="Type-of-apartment" selected="False" />
+                <SelectField field="No-of-Credits-at-this-Bank" selected="False" />
+                <SelectField field="Occupation" selected="True" />
+                <SelectField field="No-of-dependents" selected="True" />
+                <SelectField field="Telephone" selected="True" />
+                <SelectField field="Foreign-Worker" selected="True" />
+                <SelectField field="Duration-in-Current-address" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings>
+            <Position x="331" y="405.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">Credit-Application-Result=True,Account-Balance=True,Duration-of-Credit-Month=True,Payment-Status-of-Previous-Credit=True,Purpose=True,Credit-Amount=True,Value-Savings-Stocks=True,Length-of-current-employment=True,Instalment-per-cent=True,Guarantors=True,Most-valuable-available-asset=True,Age-years=True,Type-of-apartment=True,No-of-Credits-at-this-Bank=True,No-of-dependents=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">True</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">False</Value>
+              <Value name="NPercent">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="120">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="427" y="453.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16876_7fb87d0661294944b269cc0eaa38511f_\Engine_3088_48977c7e358c4fbe94d9cef4b4d8dcde_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="427" y="405.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16876_7fb87d0661294944b269cc0eaa38511f_\Engine_3088_c988537e31364fe1b822fbd3dc69ab6c_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="118">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="427" y="357.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16876_7fb87d0661294944b269cc0eaa38511f_\Engine_3088_14e2100fecf94405abde8f0801b2f7a7_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="121">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="427" y="513.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16876_7fb87d0661294944b269cc0eaa38511f_\Engine_3088_102ef49b5a004dfda9a297ed07944fdc_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="108">
+          <GuiSettings>
+            <Position x="331" y="561.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">Guarantors=True,Concurrent-Credits=True,Occupation=True,No-of-dependents=True,Telephone=True,Foreign-Worker=True,Duration-in-Current-address=False</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">True</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">False</Value>
+              <Value name="NPercent">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="122">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="427" y="561.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16876_7fb87d0661294944b269cc0eaa38511f_\Engine_3088_916020bed834413bb8ad4f293e9533ed_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="123">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="427" y="609.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16876_7fb87d0661294944b269cc0eaa38511f_\Engine_3088_b7bfcf9115c148c1bd177f706c5238fa_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="247" y="617.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16876_7fb87d0661294944b269cc0eaa38511f_\Engine_3088_fc737e8d976f408eb0feedd1fb781f78_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="247" y="545.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16876_7fb87d0661294944b269cc0eaa38511f_\Engine_3088_250c25986bab48eb87b1496c1bdee686_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings>
+            <Position x="151.0001" y="581.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="do target">False</Value>
+              <Value name="target">Credit-Application-Result</Value>
+              <Value name="target level" />
+              <Value name="use fields">"Duration-of-Credit-Month","Credit-Amount","Instalment-per-cent","Most-valuable-available-asset","Age-years","Type-of-apartment"</Value>
+              <Value name="Pearson">True</Value>
+              <Value name="Spearman">False</Value>
+              <Value name="Hoeffding">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Association_Analysis.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="605.0002" y="41.99978" width="1729" height="551.0002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Model Container</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="98">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1338" y="422.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_c908e1a5651740e085c7bbcdbbe8176a_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1338" y="338" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_e16be73a99b94432949fb3bc3647614d_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1338" y="253.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_a90f04afe19d4684ac1885f4713c6454_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings>
+            <Position x="1242" y="338" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="target.level">Creditworthy</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="predictions">
+              <RecordInfo>
+                <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="LOG" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="TREE" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="FOREST" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="BOOST" size="1073741823" source="R-DATA:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="error_measures">
+              <RecordInfo>
+                <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Accuracy" source="R-DATA:" type="Double" />
+                <Field name="Accuracy_Creditworthy" source="R-DATA:" type="Double" />
+                <Field name="Accuracy_Non-Creditworthy" source="R-DATA:" type="Double" />
+                <Field name="F1" source="R-DATA:" type="Double" />
+                <Field name="AUC" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Report">
+              <RecordInfo>
+                <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+                <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Model+Comparison\Model Comparison.yxmc" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings>
+            <Position x="1974" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Score</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Account.Balance" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Duration.of.Credit.Month" source="R-DATA:" type="Double" />
+                <Field name="Payment.Status.of.Previous.Credit" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Purpose" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Credit.Amount" source="R-DATA:" type="Double" />
+                <Field name="Length.of.current.employment" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Instalment.per.cent" source="R-DATA:" type="Double" />
+                <Field name="Duration.in.Current.address" source="R-DATA:" type="Double" />
+                <Field name="Most.valuable.available.asset" source="R-DATA:" type="Double" />
+                <Field name="Age.years" source="R-DATA:" type="Double" />
+                <Field name="Concurrent.Credits" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Score_Creditworthy" source="R-DATA:" type="Double" />
+                <Field name="Score_Non-Creditworthy" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1122" y="330.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings>
+            <Position x="630.0002" y="129.9997" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="estimation pct">70</Value>
+              <Value name="validation pct">30</Value>
+              <Value name="rand seed">1</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+        </Node>
+        <Node ToolID="104">
+          <GuiSettings>
+            <Position x="990" y="93.99996" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="New Model">STEP</Value>
+              <Value name="both">True</Value>
+              <Value name="backward">False</Value>
+              <Value name="AIC">True</Value>
+              <Value name="BIC">False</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Stepwise.yxmc" />
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1062" y="85.99978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_2d0d79ee41274bc795f3bfad448a486e_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="106">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1062" y="109.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_3f4d900d52814a719a54c255c14d5d1e_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="85">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1770" y="170" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File>..\files\customers-to-score.xlsx|||`Sheet1$`</File>
+              <Passwords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>customers-to-score.xlsx
+Table=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Account-Balance" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Duration-of-Credit-Month" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Payment-Status-of-Previous-Credit" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Purpose" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Credit-Amount" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Value-Savings-Stocks" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Length-of-current-employment" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Instalment-per-cent" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Guarantors" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Duration-in-Current-address" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Most-valuable-available-asset" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Age-years" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Concurrent-Credits" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Type-of-apartment" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="No-of-Credits-at-this-Bank" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="Occupation" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="No-of-dependents" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Telephone" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Foreign-Worker" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p4\files\customers-to-score.xlsx|||`Sheet1$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="125">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1866" y="169.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Value-Savings-Stocks" selected="False" />
+                <SelectField field="Guarantors" selected="False" />
+                <SelectField field="Type-of-apartment" selected="False" />
+                <SelectField field="No-of-Credits-at-this-Bank" selected="False" />
+                <SelectField field="Occupation" selected="False" />
+                <SelectField field="No-of-dependents" selected="False" />
+                <SelectField field="Telephone" selected="False" />
+                <SelectField field="Foreign-Worker" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="126">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2070" y="102.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_98b6c6ea21c94720af7e4ad98a0578c5_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="128">
+          <GuiSettings>
+            <Position x="1554" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Score</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Credit.Application.Result" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Account.Balance" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Duration.of.Credit.Month" source="R-DATA:" type="Double" />
+                <Field name="Payment.Status.of.Previous.Credit" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Purpose" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Credit.Amount" source="R-DATA:" type="Double" />
+                <Field name="Value.Savings.Stocks" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Length.of.current.employment" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Instalment.per.cent" source="R-DATA:" type="Double" />
+                <Field name="Most.valuable.available.asset" source="R-DATA:" type="Double" />
+                <Field name="Age.years" source="R-DATA:" type="Double" />
+                <Field name="Type.of.apartment" source="R-DATA:" type="Double" />
+                <Field name="No.of.Credits.at.this.Bank" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Score_Creditworthy" source="R-DATA:" type="Double" />
+                <Field name="Score_Non-Creditworthy" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="129">
+          <GuiSettings>
+            <Position x="1554" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Score</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Credit.Application.Result" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Account.Balance" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Duration.of.Credit.Month" source="R-DATA:" type="Double" />
+                <Field name="Payment.Status.of.Previous.Credit" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Purpose" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Credit.Amount" source="R-DATA:" type="Double" />
+                <Field name="Value.Savings.Stocks" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Length.of.current.employment" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Instalment.per.cent" source="R-DATA:" type="Double" />
+                <Field name="Most.valuable.available.asset" source="R-DATA:" type="Double" />
+                <Field name="Age.years" source="R-DATA:" type="Double" />
+                <Field name="Type.of.apartment" source="R-DATA:" type="Double" />
+                <Field name="No.of.Credits.at.this.Bank" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Score_Creditworthy" source="R-DATA:" type="Double" />
+                <Field name="Score_Non-Creditworthy" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="130">
+          <GuiSettings>
+            <Position x="1554" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Score</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Credit.Application.Result" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Account.Balance" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Duration.of.Credit.Month" source="R-DATA:" type="Double" />
+                <Field name="Payment.Status.of.Previous.Credit" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Purpose" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Credit.Amount" source="R-DATA:" type="Double" />
+                <Field name="Value.Savings.Stocks" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Length.of.current.employment" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Instalment.per.cent" source="R-DATA:" type="Double" />
+                <Field name="Most.valuable.available.asset" source="R-DATA:" type="Double" />
+                <Field name="Age.years" source="R-DATA:" type="Double" />
+                <Field name="Type.of.apartment" source="R-DATA:" type="Double" />
+                <Field name="No.of.Credits.at.this.Bank" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Score_Creditworthy" source="R-DATA:" type="Double" />
+                <Field name="Score_Non-Creditworthy" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="131">
+          <GuiSettings>
+            <Position x="1554" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Score</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Credit.Application.Result" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Account.Balance" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Duration.of.Credit.Month" source="R-DATA:" type="Double" />
+                <Field name="Payment.Status.of.Previous.Credit" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Purpose" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Credit.Amount" source="R-DATA:" type="Double" />
+                <Field name="Value.Savings.Stocks" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Length.of.current.employment" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Instalment.per.cent" source="R-DATA:" type="Double" />
+                <Field name="Most.valuable.available.asset" source="R-DATA:" type="Double" />
+                <Field name="Age.years" source="R-DATA:" type="Double" />
+                <Field name="Type.of.apartment" source="R-DATA:" type="Double" />
+                <Field name="No.of.Credits.at.this.Bank" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Score_Creditworthy" source="R-DATA:" type="Double" />
+                <Field name="Score_Non-Creditworthy" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings>
+            <Position x="810" y="205.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Model Name">TREE</Value>
+              <Value name="Y Var">Credit-Application-Result</Value>
+              <Value name="X Vars">Account-Balance + Payment-Status-of-Previous-Credit + Purpose + Credit-Amount + Length-of-current-employment + Instalment-per-cent + Most-valuable-available-asset</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights">Duration-of-Credit-Month</Value>
+              <Value name="cp">Auto</Value>
+              <Value name="select.type">False</Value>
+              <Value name="classification">True</Value>
+              <Value name="use.gini">True</Value>
+              <Value name="use.information">False</Value>
+              <Value name="regression">False</Value>
+              <Value name="min.split">20</Value>
+              <Value name="min.bucket">7</Value>
+              <Value name="usesurrogate.0">False</Value>
+              <Value name="usesurrogate.1">False</Value>
+              <Value name="usesurrogate.2">True</Value>
+              <Value name="total.correct">True</Value>
+              <Value name="percent.correct">False</Value>
+              <Value name="xval.folds">10</Value>
+              <Value name="max.depth">20</Value>
+              <Value name="max.bins">Default</Value>
+              <Value name="tree.plot">True</Value>
+              <Value name="Counts">False</Value>
+              <Value name="Proportions">True</Value>
+              <Value name="Branch Dist">True</Value>
+              <Value name="tree.inches">True</Value>
+              <Value name="tree.in.w">5.50</Value>
+              <Value name="tree.in.h">5.50</Value>
+              <Value name="tree.centimeters">False</Value>
+              <Value name="tree.cm.w">13.00</Value>
+              <Value name="tree.cm.h">14.95</Value>
+              <Value name="tree.graph.resolution">1x</Value>
+              <Value name="tree.pointsize">8</Value>
+              <Value name="prune.plot">False</Value>
+              <Value name="prune.inches">True</Value>
+              <Value name="prune.in.w">5.50</Value>
+              <Value name="prune.in.h">5.50</Value>
+              <Value name="prune.centimeters">False</Value>
+              <Value name="prune.cm.w">13.00</Value>
+              <Value name="prune.cm.h">14.95</Value>
+              <Value name="prune.graph.resolution">1x</Value>
+              <Value name="prune.pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Decision Tree (74)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Decision_Tree.yxmc" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings>
+            <Position x="809.9999" y="130.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Model Name">LOG</Value>
+              <Value name="Y Var">Credit-Application-Result</Value>
+              <Value name="X Vars">Account-Balance + Payment-Status-of-Previous-Credit + Purpose + Credit-Amount + Length-of-current-employment + Instalment-per-cent + Most-valuable-available-asset</Value>
+              <Value name="Link">logit</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec">Duration-of-Credit-Month</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Logistic Regression (72)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Logistic_Regression.yxmc" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings>
+            <Position x="809.9999" y="289.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Model Name">FOREST</Value>
+              <Value name="Y Var">Credit-Application-Result</Value>
+              <Value name="X Vars">Account-Balance + Payment-Status-of-Previous-Credit + Purpose + Credit-Amount + Length-of-current-employment + Instalment-per-cent + Most-valuable-available-asset</Value>
+              <Value name="Num Trees">500</Value>
+              <Value name="Custom Num Vars">False</Value>
+              <Value name="Num Vars">3</Value>
+              <Value name="model.size">False</Value>
+              <Value name="total.nodes">100</Value>
+              <Value name="max.depth">10</Value>
+              <Value name="node.size">5</Value>
+              <Value name="replace">True</Value>
+              <Value name="samp.rate">100</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Forest Model (73)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings>
+            <Position x="810.0001" y="373.9997" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model.name">BOOST</Value>
+              <Value name="select.target">Credit-Application-Result</Value>
+              <Value name="select.predictors">Credit-Application-Result=False,Account-Balance=True,Duration-of-Credit-Month=False,Payment-Status-of-Previous-Credit=True,Purpose=True,Credit-Amount=True,Value-Savings-Stocks=False,Length-of-current-employment=True,Instalment-per-cent=True,Most-valuable-available-asset=True,Age-years=False,Type-of-apartment=False,No-of-Credits-at-this-Bank=False</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights">Duration-of-Credit-Month</Value>
+              <Value name="marginal.plots">False</Value>
+              <Value name="plot.min.importance">2.5</Value>
+              <Value name="type.distribution">False</Value>
+              <Value name="type.continuous">True</Value>
+              <Value name="dist.gaussian">True</Value>
+              <Value name="dist.laplace">False</Value>
+              <Value name="dist.t">False</Value>
+              <Value name="t.df">4</Value>
+              <Value name="type.count">False</Value>
+              <Value name="type.binomial">False</Value>
+              <Value name="dist.bernoulli">True</Value>
+              <Value name="dist.adaboost">False</Value>
+              <Value name="type.multinomial">False</Value>
+              <Value name="n.trees">4000</Value>
+              <Value name="assess.cv">True</Value>
+              <Value name="num.folds">5</Value>
+              <Value name="n.cores">1</Value>
+              <Value name="assess.test">False</Value>
+              <Value name="train.fraction">50.0</Value>
+              <Value name="assess.oob">False</Value>
+              <Value name="bag.fraction">50.0</Value>
+              <Value name="shrinkage">0.0020</Value>
+              <Value name="interaction.depth">1</Value>
+              <Value name="n.minobsinnode">10</Value>
+              <Value name="rand.seed">1</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Boosted Model (75)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+        </Node>
+        <Node ToolID="132">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1842" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_280ac5c3a2024377ae7526cc8430e61c_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1842" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_6da9f912dee64d64a3a08c9a152addc2_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1842" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_b02f97d9725a49dfbfe1b39abd15e9ec_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints />
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="906" y="389.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_e11ec17054054002863659c6cef5f073_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="139">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="906" y="305.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_5d012ce08e6c42829ea3465a6180099a_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="141">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="906.0001" y="210.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_ff385f6ee9e548618d029f831dfb1e15_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="142">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="906" y="245.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_b8cccaa3d8af49f5872797488914cd69_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="144">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="906" y="149.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_46df8717c0fc44539fd2ccfa36750ae9_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="145">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2058" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Score_Creditworthy]&gt;[Score_Non-Creditworthy]&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="isCreditworthy" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>isCreditworthy = IF [Score_Creditworthy]&gt;[Score_Non-Creditworthy]
+THEN 1
+ELSE 0
+...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="146">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="2154" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="isCreditworthy" action="Sum" rename="Sum_isCreditworthy" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="147">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2250" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_e3c7a5891d3348888f76687f39e83bfd_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="148">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1650" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Credit.Application.Result] = 'Creditworthy' AND [Score_Creditworthy]&gt;.5&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="TEST1" size="2" type="Int16" />
+                <FormulaField expression="IF [Credit.Application.Result] != 'Creditworthy' AND [Score_Non-Creditworthy] &gt;.5&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="TEST2" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>TEST1 = IF [Credit.Application.Result] = 'Creditworthy' AND [Score_Creditworthy]...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="150">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1650" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Credit.Application.Result] = 'Creditworthy' AND [Score_Creditworthy]&gt;.5&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="TEST1" size="2" type="Int16" />
+                <FormulaField expression="IF [Credit.Application.Result] != 'Creditworthy' AND [Score_Non-Creditworthy] &gt;.5&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="TEST2" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>TEST1 = IF [Credit.Application.Result] = 'Creditworthy' AND [Score_Creditworthy]...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="151">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1650" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Credit.Application.Result] = 'Creditworthy' AND [Score_Creditworthy]&gt;.5&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="TEST1" size="2" type="Int16" />
+                <FormulaField expression="IF [Credit.Application.Result] != 'Creditworthy' AND [Score_Non-Creditworthy] &gt;.5&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="TEST2" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>TEST1 = IF [Credit.Application.Result] = 'Creditworthy' AND [Score_Creditworthy]...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="152">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1650" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [Credit.Application.Result] = 'Creditworthy' AND [Score_Creditworthy]&gt;.5&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="TEST1" size="2" type="Int16" />
+                <FormulaField expression="IF [Credit.Application.Result] != 'Creditworthy' AND [Score_Non-Creditworthy] &gt;.5&#xA;THEN 1&#xA;ELSE 0&#xA;ENDIF" field="TEST2" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>TEST1 = IF [Credit.Application.Result] = 'Creditworthy' AND [Score_Creditworthy]...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="154">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1746" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="TEST1" action="Sum" rename="Sum_TEST1" />
+                <SummarizeField field="TEST2" action="Sum" rename="Sum_TEST2" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="155">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1746" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="TEST1" action="Sum" rename="Sum_TEST1" />
+                <SummarizeField field="TEST2" action="Sum" rename="Sum_TEST2" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="156">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1746" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="TEST1" action="Sum" rename="Sum_TEST1" />
+                <SummarizeField field="TEST2" action="Sum" rename="Sum_TEST2" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="157">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1746" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="TEST1" action="Sum" rename="Sum_TEST1" />
+                <SummarizeField field="TEST2" action="Sum" rename="Sum_TEST2" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="158">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1842" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_22300_dac4abaa745e4271a0bc9a0af85fa9ca_\Engine_16128_2ff5ee546f3a4200bef0e4941d11a013_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
     </Node>
   </Nodes>
   <Connections>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="80" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="89" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="108" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Reports" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Interactive" />
+      <Destination ToolID="120" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Reports" />
+      <Destination ToolID="122" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Interactive" />
+      <Destination ToolID="123" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Correlation Matrix" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="error_measures" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="predictions" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Report" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="145" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="78" Connection="Models" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Validation" />
+      <Destination ToolID="78" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Estimation" />
+      <Destination ToolID="104" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="104" Connection="Right Input" />
+    </Connection>
     <Connection>
       <Origin ToolID="49" Connection="Estimation" />
       <Destination ToolID="72" Connection="Input" />
@@ -411,16 +1745,76 @@ Table=`Sheet1$`</DefaultAnnotationText>
       <Destination ToolID="75" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="49" Connection="Estimation" />
-      <Destination ToolID="78" Connection="Data" />
+      <Origin ToolID="49" Connection="Validation" />
+      <Destination ToolID="131" Connection="Left Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="76" Connection="Output" />
-      <Destination ToolID="78" Connection="Models" />
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="131" Connection="Right Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="71" Connection="Output" />
-      <Destination ToolID="79" Connection="Input" />
+      <Origin ToolID="49" Connection="Validation" />
+      <Destination ToolID="128" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="128" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Validation" />
+      <Destination ToolID="129" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="129" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Validation" />
+      <Destination ToolID="130" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="130" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="105" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Reports" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="Output" />
+      <Destination ToolID="77" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="77" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="128" Connection="Output" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="129" Connection="Output" />
+      <Destination ToolID="151" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="Output" />
+      <Destination ToolID="150" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="131" Connection="Output" />
+      <Destination ToolID="148" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
     </Connection>
     <Connection name="#1">
       <Origin ToolID="72" Connection="Output" />
@@ -430,21 +1824,69 @@ Table=`Sheet1$`</DefaultAnnotationText>
       <Origin ToolID="73" Connection="Output" />
       <Destination ToolID="76" Connection="Input" />
     </Connection>
-    <Connection name="#2">
-      <Origin ToolID="74" Connection="Output" />
-      <Destination ToolID="76" Connection="Input" />
-    </Connection>
     <Connection name="#4">
       <Origin ToolID="75" Connection="Output" />
       <Destination ToolID="76" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="79" Connection="Output" />
-      <Destination ToolID="49" Connection="Input" />
+      <Origin ToolID="74" Connection="Reports" />
+      <Destination ToolID="141" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="79" Connection="Output" />
-      <Destination ToolID="80" Connection="Field Input" />
+      <Origin ToolID="74" Connection="Interactive" />
+      <Destination ToolID="142" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Reports" />
+      <Destination ToolID="144" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Reports" />
+      <Destination ToolID="139" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Report" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="Output" />
+      <Destination ToolID="146" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="146" Connection="Output" />
+      <Destination ToolID="147" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="148" Connection="Output" />
+      <Destination ToolID="154" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="150" Connection="Output" />
+      <Destination ToolID="157" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="151" Connection="Output" />
+      <Destination ToolID="156" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="152" Connection="Output" />
+      <Destination ToolID="155" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="154" Connection="Output" />
+      <Destination ToolID="135" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="155" Connection="Output" />
+      <Destination ToolID="158" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="156" Connection="Output" />
+      <Destination ToolID="133" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="157" Connection="Output" />
+      <Destination ToolID="132" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
