@@ -7,23 +7,37 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File>C:\Users\KK\Downloads\Predictive\diamonds.csv</File>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">..\files\diamonds.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>diamonds.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Field_1" size="254" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="V_String" />
-            <Field name="carat" size="254" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="V_String" />
-            <Field name="cut" size="254" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="V_String" />
-            <Field name="cut_ord" size="254" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="V_String" />
-            <Field name="color" size="254" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="V_String" />
-            <Field name="clarity" size="254" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="V_String" />
-            <Field name="clarity_ord" size="254" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="V_String" />
-            <Field name="price" size="254" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="V_String" />
+            <Field name="Field_1" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="carat" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="cut" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="cut_ord" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="color" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="clarity" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="clarity_ord" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
+            <Field name="price" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -35,22 +49,36 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File>C:\Users\KK\Downloads\Predictive\new-diamonds.csv</File>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">..\files\new-diamonds.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>new-diamonds.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Field_1" size="254" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="V_String" />
-            <Field name="carat" size="254" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="V_String" />
-            <Field name="cut" size="254" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="V_String" />
-            <Field name="cut_ord" size="254" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="V_String" />
-            <Field name="color" size="254" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="V_String" />
-            <Field name="clarity" size="254" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="V_String" />
-            <Field name="clarity_ord" size="254" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="V_String" />
+            <Field name="Field_1" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="carat" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="cut" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="cut_ord" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="color" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="clarity" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
+            <Field name="clarity_ord" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -121,14 +149,14 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Field_1" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="Int32" />
-            <Field name="carat" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="Double" />
-            <Field name="cut" size="9" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="String" />
-            <Field name="cut_ord" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="Byte" />
-            <Field name="color" size="1" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="String" />
-            <Field name="clarity" size="4" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="String" />
-            <Field name="clarity_ord" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="Byte" />
-            <Field name="price" source="File: C:\Users\KK\Downloads\Predictive\diamonds.csv" type="Int16" />
+            <Field name="Field_1" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Int32" />
+            <Field name="carat" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Double" />
+            <Field name="cut" size="9" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="String" />
+            <Field name="cut_ord" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Byte" />
+            <Field name="color" size="1" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="String" />
+            <Field name="clarity" size="4" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="String" />
+            <Field name="clarity_ord" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Byte" />
+            <Field name="price" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\diamonds.csv" type="Int16" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -158,13 +186,13 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Field_1" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="Int16" />
-            <Field name="carat" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="Double" />
-            <Field name="cut" size="9" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="String" />
-            <Field name="cut_ord" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="Byte" />
-            <Field name="color" size="1" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="String" />
-            <Field name="clarity" size="4" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="String" />
-            <Field name="clarity_ord" source="File: C:\Users\KK\Downloads\Predictive\new-diamonds.csv" type="Byte" />
+            <Field name="Field_1" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="Int16" />
+            <Field name="carat" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="Double" />
+            <Field name="cut" size="9" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="String" />
+            <Field name="cut_ord" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="Byte" />
+            <Field name="color" size="1" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="String" />
+            <Field name="clarity" size="4" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="String" />
+            <Field name="clarity_ord" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p0\files\new-diamonds.csv" type="Byte" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -213,7 +241,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24272_77f5df8fe0f64dc898dead908b3ddcf4_\Engine_7632_1aec30c499e44b04ae10eff8c7caa617_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_aa84e0d58fd741489c21fb335caa5c41_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -229,7 +257,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">C:\Users\KK\Downloads\Predictive\diamonds_alteryx.xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">..\files\diamonds_alteryx.xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <OutputOption>Create</OutputOption>
@@ -242,6 +270,9 @@
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -300,9 +331,6 @@ Table=Sheet1</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
     </Node>
@@ -319,9 +347,6 @@ Table=Sheet1</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Frequency.yxmc" />
     </Node>
@@ -345,7 +370,7 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24272_77f5df8fe0f64dc898dead908b3ddcf4_\Engine_7632_a3ea7d2f3c014c6dac5992414de0b85a_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_c8b12838a94f477dbc52c54030a7f47a_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -361,7 +386,7 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24272_77f5df8fe0f64dc898dead908b3ddcf4_\Engine_7632_55d6cc8a18004279b662eab54c05c41c_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_0a2699c7cbf74b198e8c2a374cdfb7ee_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -377,7 +402,7 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24272_77f5df8fe0f64dc898dead908b3ddcf4_\Engine_7632_cb89ffd27b3e4d53be58755ddca9bb34_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_e91cb9a40183436fb27a19b1db546614_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -393,7 +418,7 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24272_77f5df8fe0f64dc898dead908b3ddcf4_\Engine_7632_df67aaceefd148369d1feece27b61549_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_bd8a1c67f78b4637812c6ff54934b834_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -409,7 +434,7 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_24272_77f5df8fe0f64dc898dead908b3ddcf4_\Engine_7632_e2f21eff02e04ca2bcea5dc85b4ed4ed_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_8c3184c2fa6e4315ae9cd4641f8a2d94_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -424,6 +449,9 @@ Table=Sheet1</DefaultAnnotationText>
         <Position x="1494" y="270" />
       </GuiSettings>
       <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_07f60d624887451a833077591d50dcf8_.yxdb</TempFile>
+        </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -437,6 +465,9 @@ Table=Sheet1</DefaultAnnotationText>
         <Position x="1494" y="354" />
       </GuiSettings>
       <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_84ce010830ad49ba8c1116416e0b24ad_.yxdb</TempFile>
+        </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -450,6 +481,9 @@ Table=Sheet1</DefaultAnnotationText>
         <Position x="1494" y="438" />
       </GuiSettings>
       <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_18052_9604d685659f4ac59b02c568a59644bd_\Engine_6960_2801b933f9854698a612fc3c4b79eb12_.yxdb</TempFile>
+        </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -574,7 +608,7 @@ Table=Sheet1</DefaultAnnotationText>
       <ToolInDb value="False" />
       <CategoryName />
       <SearchTags />
-      <Author />
+      <Author>Kacper Ksieski</Author>
       <Company />
       <Copyright />
       <DescriptionLink actual="" displayed="" />
