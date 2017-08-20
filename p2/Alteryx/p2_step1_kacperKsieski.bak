@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.0">
+<AlteryxDocument yxmdVer="11.3">
   <Nodes>
     <Node ToolID="95">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -85,9 +85,6 @@
           <DefaultAnnotationText>p2-2010-pawdacity-monthly-sales.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="NAME" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p2\files\p2-2010-pawdacity-monthly-sales.csv" type="V_String" />
@@ -499,7 +496,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="19" MaxRecords="">.\project2.yxdb</File>
+          <File FileFormat="19" MaxRecords="">..\files\p2_step1_output.yxdb</File>
           <Passwords />
           <FormatSpecificOptions>
             <NoSpatialIndex>False</NoSpatialIndex>
@@ -509,7 +506,7 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>project2.yxdb</DefaultAnnotationText>
+          <DefaultAnnotationText>p2_step1_output.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <Dependencies>
@@ -631,7 +628,7 @@ lowe...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2492_958767b7e0934f0e95024193b7424334_\Engine_14048_199453e6decb4985a9727fac8eed30e9_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_7632_081d50299f9c4a69bc54ae2182bbb0d7_\Engine_18440_e20bd0baa9dc4a82ba58d150c9ce323b_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -678,7 +675,7 @@ lowe...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2492_958767b7e0934f0e95024193b7424334_\Engine_14048_2536fa0bb10a41068109c59dde1cd6a8_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_7632_081d50299f9c4a69bc54ae2182bbb0d7_\Engine_18440_21d8a9d5e6cd4f2b89769f70342ea355_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -944,7 +941,7 @@ Name - Ascending</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2492_958767b7e0934f0e95024193b7424334_\Engine_14048_5d97954623a04426a6458971cd26e9ee_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_7632_081d50299f9c4a69bc54ae2182bbb0d7_\Engine_18440_ae18b706edd7490bbcd61ea17c1b72a4_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -1938,9 +1935,9 @@ ELSEIF [Name2]='Total_Paw...</DefaultAnnotationText>
     <ConvErrorLimit value="10" />
     <ConvErrorLimit_Stop value="False" />
     <CancelOnError value="False" />
-    <DisableBrowse value="True" />
+    <DisableBrowse value="False" />
     <EnablePerformanceProfiling value="True" />
-    <DisableAllOutput value="True" />
+    <DisableAllOutput value="False" />
     <ShowAllMacroMessages value="True" />
     <ShowConnectionStatusIsOn value="True" />
     <ShowConnectionStatusOnlyWhenRunning value="False" />
@@ -1958,7 +1955,7 @@ ELSEIF [Name2]='Total_Paw...</DefaultAnnotationText>
       <Author>Kacper Ksieski</Author>
       <Company />
       <Copyright />
-      <DescriptionLink actual="" displayed="" />
+      <DescriptionLink actual="https://github.com/kksieski/udacity_pand" displayed="https://github.com/kksieski/udacity_pand" />
       <Example>
         <Description />
         <File />

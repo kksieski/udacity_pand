@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.0">
+<AlteryxDocument yxmdVer="11.3">
   <Nodes>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -28,12 +28,12 @@
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">..\Alteryx\project2.yxdb</File>
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">..\files\p2_step1_output.yxdb</File>
           <FormatSpecificOptions />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>project2.yxdb</DefaultAnnotationText>
+          <DefaultAnnotationText>p2_step1_output.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <Dependencies>
@@ -44,10 +44,10 @@
             <Field name="City" size="12" source="Summarize: GroupBy - CITY" type="String" />
             <Field description="RegEx: Parsed from 2010_census" name="2010_Census_Population" source="RegEx: Parsed from 2010_census" type="Int32" />
             <Field name="Total_Pawdacity_Sales" source="Summarize: Sum - Value" type="Int64" />
-            <Field name="Land_Area" source="File: C:\Users\KK\Downloads\Predictive\project2\p2-wy-demographic-data.csv" type="Double" />
-            <Field name="Households_with_Under_18" source="File: C:\Users\KK\Downloads\Predictive\project2\p2-wy-demographic-data.csv" type="Int16" />
-            <Field name="Population_Density" source="File: C:\Users\KK\Downloads\Predictive\project2\p2-wy-demographic-data.csv" type="Double" />
-            <Field name="Total_Families" source="File: C:\Users\KK\Downloads\Predictive\project2\p2-wy-demographic-data.csv" type="Double" />
+            <Field name="Land_Area" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p2\files\p2-wy-demographic-data.csv" type="Double" />
+            <Field name="Households_with_Under_18" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p2\files\p2-wy-demographic-data.csv" type="Int16" />
+            <Field name="Population_Density" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p2\files\p2-wy-demographic-data.csv" type="Double" />
+            <Field name="Total_Families" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p2\files\p2-wy-demographic-data.csv" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -239,7 +239,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_6308c8242f354860a84e93ff426fdf79_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_42b0fccc5edf4716b07c3e12ff2a615d_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -267,7 +267,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_d2b58a0cd8ca4b878569bf63e98b113a_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_bc01a916997942c8b9edc6fee70cc549_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -283,7 +283,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_7adabeb25ae0437e99423df13f7b6646_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_b541a3b8e55e4a3c89fbb0edf828f6c8_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -311,7 +311,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_3b88a9d5655749aeb00d8764668c15aa_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_0554e37c933a4403b9407a5f375a91ae_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -339,7 +339,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_5281ea32f8274f54aca8d38cbb192a2d_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_579b985d6e014f91beee8c60200676ea_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -355,7 +355,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_2d11b84d85d449d8b89d8345c9994316_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_87c831cba3e44683b55bb14dbde035eb_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -371,7 +371,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_2d6f403f778246edb167d91783a82975_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_02934d31a4224362b032897f5cf7a7fd_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -417,9 +417,6 @@
           <DefaultAnnotationText>p2-wy-453910-naics-data.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="BUSINESS NAME" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p2\files\p2-wy-453910-naics-data.csv" type="V_String" />
@@ -754,7 +751,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_11186d8ff2f84bc495696a3d171c61b4_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_fd91497da2754c8a82470feb7203c20e_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1016,7 +1013,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_025da0118d1d4b4ca5f11f28014ed945_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_652e4f2f83844f2bbd7a246fa4238c89_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1256,7 +1253,7 @@ Variable2=Total_Families
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_06e6fad1c36f48fd9185fc6a19995834_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_cf0ff150b8cb4b14b6852655fc2c61cd_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1284,7 +1281,7 @@ Variable2=Total_Families
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_84fed57d7d8348088581c0620254cfe9_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_b68f5849abc340cb8f4805e880201dc6_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1312,7 +1309,7 @@ Variable2=Total_Families
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_7d02a5b4c71c439f94f6a9fb585630cb_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_5f9dddb7b6774172a86ec404bec22ef1_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1340,7 +1337,7 @@ Variable2=Total_Families
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_a569094243494c9da32e2240a324c148_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_b58692f63fac498c9739966c7291e152_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1368,7 +1365,7 @@ Variable2=Total_Families
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_49e49913a2254faaad7ad04a94da7679_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_ba43dd6714864c1a9015cd4f594dcd6a_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1596,7 +1593,7 @@ Variable2=Total_Families
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_bc4289b7a8c0462391e07cb1d72cb0d7_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_a13aa6235eba441696da6b3bb50e532a_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1624,7 +1621,7 @@ Variable2=Total_Families
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_3c00a8ac302c4ff2901281aed81f7d70_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_1b46844ac57b486c85f06eb786679318_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1652,7 +1649,7 @@ Variable2=Total_Families
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_96137693f02d465b921920168c759d3b_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_d8d35ed22e0c4af5a9c98549e5482f54_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1680,7 +1677,7 @@ Variable2=Total_Families
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19592_f125092d87e5477abaed4b95157e02da_\Engine_11612_3b8af1f9f1a149f9b7e83cd18f92e7b2_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_13612_22cdd7ff23f6481fb73ae754e7aef92d_\Engine_18440_0f19a0c4bd234856b8075e1d943e41b0_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1949,11 +1946,11 @@ Variable2=Total_Families
     <CancelOnError value="False" />
     <DisableBrowse value="False" />
     <EnablePerformanceProfiling value="True" />
-    <DisableAllOutput value="True" />
+    <DisableAllOutput value="False" />
     <ShowAllMacroMessages value="True" />
     <ShowConnectionStatusIsOn value="True" />
     <ShowConnectionStatusOnlyWhenRunning value="False" />
-    <ZoomLevel value="-1" />
+    <ZoomLevel value="-2" />
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
@@ -1967,7 +1964,7 @@ Variable2=Total_Families
       <Author>Kacper Ksieski</Author>
       <Company />
       <Copyright />
-      <DescriptionLink actual="" displayed="" />
+      <DescriptionLink actual="https://github.com/kksieski/udacity_pand" displayed="https://github.com/kksieski/udacity_pand" />
       <Example>
         <Description />
         <File />
