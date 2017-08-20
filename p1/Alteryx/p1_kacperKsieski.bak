@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.0">
+<AlteryxDocument yxmdVer="11.3">
   <Nodes>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="114" />
+        <Position x="114" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\KK\Documents\GitHub\udacity_pand\p1\files\p1-customers.xlsx|||`p1-customers$`</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">..\files\p1-customers.xlsx|||`p1-customers$`</File>
           <FormatSpecificOptions>
             <FirstRowData>False</FirstRowData>
             <ImportLine>1</ImportLine>
@@ -20,9 +20,6 @@
 Table=`p1-customers$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Name" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p1\files\p1-customers.xlsx|||`p1-customers$`" type="V_String" />
@@ -44,12 +41,12 @@ Table=`p1-customers$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="234" />
+        <Position x="114" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\KK\Documents\GitHub\udacity_pand\p1\files\p1-mailinglist.xlsx|||`p1-mailinglist$`</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">..\files\p1-mailinglist.xlsx|||`p1-mailinglist$`</File>
           <FormatSpecificOptions>
             <FirstRowData>False</FirstRowData>
             <ImportLine>1</ImportLine>
@@ -61,9 +58,6 @@ Table=`p1-customers$`</DefaultAnnotationText>
 Table=`p1-mailinglist$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Name" size="255" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p1\files\p1-mailinglist.xlsx|||`p1-mailinglist$`" type="V_String" />
@@ -85,7 +79,7 @@ Table=`p1-mailinglist$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="35">
       <GuiSettings Plugin="Linear_Regression">
-        <Position x="174" y="114" />
+        <Position x="234" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -126,7 +120,7 @@ Table=`p1-mailinglist$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="294" y="54" />
+        <Position x="354" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -154,7 +148,7 @@ Table=`p1-mailinglist$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="294" y="114" />
+        <Position x="354" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -182,7 +176,7 @@ Table=`p1-mailinglist$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="294" y="198" />
+        <Position x="354" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -210,7 +204,7 @@ Table=`p1-mailinglist$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="39">
       <GuiSettings>
-        <Position x="390" y="114" />
+        <Position x="450" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -251,7 +245,7 @@ Table=`p1-mailinglist$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="40">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="438" y="270" />
+        <Position x="498" y="366" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -279,7 +273,7 @@ Table=`p1-mailinglist$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="41">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="630" y="114" />
+        <Position x="690" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -297,7 +291,7 @@ Table=`p1-mailinglist$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="42">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="534" y="330" />
+        <Position x="594" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -313,7 +307,7 @@ Table=`p1-mailinglist$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="43">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="726" y="114" />
+        <Position x="786" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -337,7 +331,7 @@ c...</DefaultAnnotationText>
     </Node>
     <Node ToolID="44">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="942" y="114" />
+        <Position x="1002" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -365,7 +359,7 @@ c...</DefaultAnnotationText>
     </Node>
     <Node ToolID="45">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="510" y="114" />
+        <Position x="570" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -384,7 +378,7 @@ c...</DefaultAnnotationText>
     </Node>
     <Node ToolID="46">
       <GuiSettings>
-        <Position x="438" y="330" />
+        <Position x="498" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -434,7 +428,7 @@ c...</DefaultAnnotationText>
     </Node>
     <Node ToolID="47">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="822" y="114" />
+        <Position x="882" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -456,16 +450,18 @@ c...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="50">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="438" y="318" width="106.4582" height="19" />
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="30" y="78" width="792" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Caption>Container 17</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="True" />
-          <Folded value="True" />
+          <Text>PREDICTOR VARIABLE INVESTIGATION</Text>
+          <Font name="Segoe UI" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Yellow" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -473,34 +469,26 @@ c...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
-      <ChildNodes>
-        <Node ToolID="48">
-          <GuiSettings>
-            <Position x="474" y="366" />
-          </GuiSettings>
-          <Properties>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="Predictive Tools\Nested_Test.yxmc" />
-        </Node>
-        <Node ToolID="49">
-          <GuiSettings>
-            <Position x="474" y="438" />
-          </GuiSettings>
-          <Properties>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="Predictive Tools\Stepwise.yxmc" />
-        </Node>
-      </ChildNodes>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="30" y="30" width="852" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>KACPER KSIESKI</Text>
+          <Font name="Segoe UI" size="24" style="0" />
+          <TextColor name="White" />
+          <FillColor name="Blue" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
     </Node>
   </Nodes>
   <Connections>
@@ -527,14 +515,6 @@ c...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="35" Connection="Interactive Report" />
       <Destination ToolID="38" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="35" Connection="Output" />
-      <Destination ToolID="49" Connection="Right Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="35" Connection="Output" />
-      <Destination ToolID="48" Connection="Left Input" />
     </Connection>
     <Connection>
       <Origin ToolID="39" Connection="Output" />
@@ -587,14 +567,14 @@ c...</DefaultAnnotationText>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>practice-p1-solution-workflow</Name>
+      <Name>p1_kacperKsieski</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
       <ToolInDb value="False" />
       <CategoryName />
       <SearchTags />
-      <Author />
+      <Author>Kacper Ksieski</Author>
       <Company />
       <Copyright />
       <DescriptionLink actual="" displayed="" />
