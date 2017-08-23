@@ -1,0 +1,1192 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.3">
+  <Nodes>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="550.0014" width="106.4582" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 56</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="79" y="594.0014" width="106.4582" height="50" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container 15</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="45">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+                <Position x="104" y="830.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">..\files\PCAalt.yxdb</File>
+                  <FormatSpecificOptions />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>PCAalt.yxdb</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <MetaInfo connection="Output">
+                  <RecordInfo>
+                    <Field name="Country_Code" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Country_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Long_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="Table_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                    <Field name="PC1" source="R-DATA:" type="Double" />
+                    <Field name="PC2" source="R-DATA:" type="Double" />
+                    <Field name="PC3" source="R-DATA:" type="Double" />
+                    <Field name="PC4" source="R-DATA:" type="Double" />
+                    <Field name="Input_#2_PC1" source="R-DATA:" type="Double" />
+                    <Field name="Input_#2_PC2" source="R-DATA:" type="Double" />
+                    <Field name="Input_#2_PC3" source="R-DATA:" type="Double" />
+                    <Field name="Input_#3_PC1" source="R-DATA:" type="Double" />
+                    <Field name="Input_#3_PC2" source="R-DATA:" type="Double" />
+                    <Field name="Input_#4_PC1" source="R-DATA:" type="Double" />
+                    <Field name="Input_#4_PC2" source="R-DATA:" type="Double" />
+                    <Field name="EG_ELC_ACCS_ZS" source="CrossTab:Header:Name:EG_ELC_ACCS_ZS:Sum:" type="Double" />
+                    <Field name="EN_POP_SLUM_UR_ZS" source="CrossTab:Header:Name:EN_POP_SLUM_UR_ZS:Sum:" type="Double" />
+                    <Field name="UIS_PTRHC_2" source="CrossTab:Header:Name:UIS_PTRHC_2:Sum:" type="Double" />
+                    <Field name="UIS_PTRHC_3" source="CrossTab:Header:Name:UIS_PTRHC_3:Sum:" type="Double" />
+                    <Field name="UIS_PTRHC_56" source="CrossTab:Header:Name:UIS_PTRHC_56:Sum:" type="Double" />
+                  </RecordInfo>
+                </MetaInfo>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+            </Node>
+            <Node ToolID="46">
+              <GuiSettings>
+                <Position x="236" y="674.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="the fields">PC1 + PC2 + PC3 + PC4 + Input_#2_PC1 + Input_#2_PC2 + Input_#2_PC3 + Input_#3_PC1 + Input_#3_PC2 + Input_#4_PC1 + Input_#4_PC2 + EG_ELC_ACCS_ZS + EN_POP_SLUM_UR_ZS + UIS_PTRHC_2 + UIS_PTRHC_3 + UIS_PTRHC_56</Value>
+                  <Value name="standardize">True</Value>
+                  <Value name="z score">True</Value>
+                  <Value name="unit interval">False</Value>
+                  <Value name="k-means">True</Value>
+                  <Value name="k-medians">False</Value>
+                  <Value name="neural gas">False</Value>
+                  <Value name="min clus">3</Value>
+                  <Value name="max clus">5</Value>
+                  <Value name="bootstrap rep">50</Value>
+                  <Value name="num seeds">3</Value>
+                  <Value name="inches">True</Value>
+                  <Value name="in.w">5.50</Value>
+                  <Value name="in.h">5.50</Value>
+                  <Value name="centimeters">False</Value>
+                  <Value name="cm.w">13.00</Value>
+                  <Value name="cm.h">14.95</Value>
+                  <Value name="graph.resolution">1x</Value>
+                  <Value name="pointsize">10</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="K-Centroids_Diagnostics_K-version.yxmc" />
+            </Node>
+            <Node ToolID="47">
+              <GuiSettings>
+                <Position x="236" y="830.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="the fields">PC1 + PC2 + PC3 + PC4 + Input_#2_PC1 + Input_#2_PC2 + Input_#2_PC3 + Input_#3_PC1 + Input_#3_PC2 + Input_#4_PC1 + Input_#4_PC2 + EG_ELC_ACCS_ZS + EN_POP_SLUM_UR_ZS + UIS_PTRHC_2 + UIS_PTRHC_3 + UIS_PTRHC_56</Value>
+                  <Value name="standardize">True</Value>
+                  <Value name="z score">True</Value>
+                  <Value name="unit interval">False</Value>
+                  <Value name="k-means">False</Value>
+                  <Value name="k-medians">True</Value>
+                  <Value name="neural gas">False</Value>
+                  <Value name="min clus">3</Value>
+                  <Value name="max clus">5</Value>
+                  <Value name="bootstrap rep">50</Value>
+                  <Value name="num seeds">3</Value>
+                  <Value name="inches">True</Value>
+                  <Value name="in.w">5.50</Value>
+                  <Value name="in.h">5.50</Value>
+                  <Value name="centimeters">False</Value>
+                  <Value name="cm.w">13.00</Value>
+                  <Value name="cm.h">14.95</Value>
+                  <Value name="graph.resolution">1x</Value>
+                  <Value name="pointsize">10</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="K-Centroids_Diagnostics_K-version.yxmc" />
+            </Node>
+            <Node ToolID="48">
+              <GuiSettings>
+                <Position x="236" y="974.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="the fields">PC1 + PC2 + PC3 + PC4 + Input_#2_PC1 + Input_#2_PC2 + Input_#2_PC3 + Input_#3_PC1 + Input_#3_PC2 + Input_#4_PC1 + Input_#4_PC2 + EG_ELC_ACCS_ZS + EN_POP_SLUM_UR_ZS + UIS_PTRHC_2 + UIS_PTRHC_3 + UIS_PTRHC_56</Value>
+                  <Value name="standardize">True</Value>
+                  <Value name="z score">True</Value>
+                  <Value name="unit interval">False</Value>
+                  <Value name="k-means">False</Value>
+                  <Value name="k-medians">False</Value>
+                  <Value name="neural gas">True</Value>
+                  <Value name="min clus">3</Value>
+                  <Value name="max clus">5</Value>
+                  <Value name="bootstrap rep">50</Value>
+                  <Value name="num seeds">3</Value>
+                  <Value name="inches">True</Value>
+                  <Value name="in.w">5.50</Value>
+                  <Value name="in.h">5.50</Value>
+                  <Value name="centimeters">False</Value>
+                  <Value name="cm.w">13.00</Value>
+                  <Value name="cm.h">14.95</Value>
+                  <Value name="graph.resolution">1x</Value>
+                  <Value name="pointsize">10</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="K-Centroids_Diagnostics_K-version.yxmc" />
+            </Node>
+            <Node ToolID="49">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="332" y="938.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15156_bce8abba481b4765aadd976ae92c908c_\Engine_16180_5b3c9dc09f3541a39282e7cf030c2131_.yxdb</TempFile>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="50">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="332" y="1010.001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15156_bce8abba481b4765aadd976ae92c908c_\Engine_16180_997ab01655ee49fc815ceec86a279b0d_.yxdb</TempFile>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="51">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="332" y="782.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15156_bce8abba481b4765aadd976ae92c908c_\Engine_16180_a9b6fe5331c34e6585ec8485c8ea4a38_.yxdb</TempFile>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="52">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="332" y="866.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15156_bce8abba481b4765aadd976ae92c908c_\Engine_16180_24957efd00ff4c539090d29d0e4cc9b0_.yxdb</TempFile>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="53">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="332" y="638.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15156_bce8abba481b4765aadd976ae92c908c_\Engine_16180_58d506b26dd54d0a9fb1a740eb24226c_.yxdb</TempFile>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="54">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="332" y="710.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15156_bce8abba481b4765aadd976ae92c908c_\Engine_16180_348d599efbdc44abb199fb5a96810170_.yxdb</TempFile>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="415.0001" y="702.0014" width="106.4582" height="50" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="35">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+                <Position x="644.0001" y="818.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ByName_ErrorMode>Warning</ByName_ErrorMode>
+                  <ByName_OutputMode>All</ByName_OutputMode>
+                  <Mode>ByName</Mode>
+                  <SetOutputOrder value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+            </Node>
+            <Node ToolID="36">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="440.0005" y="938.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="'Neural Gas'" field="Method" size="23" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[Method = 'Neural Gas'
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="37">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="440.0001" y="830.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="'K-Medians'" field="Method" size="23" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[Method = 'K-Medians'
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="38">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="440.0003" y="746.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="'K-Means'" field="Method" size="23" type="V_WString" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[Method = 'K-Means'
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="39">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="740.0001" y="818.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Method" selected="True" />
+                    <SelectField field="Clusters" selected="True" />
+                    <SelectField field="Index" selected="True" />
+                    <SelectField field="Minimum" selected="True" />
+                    <SelectField field="1st_Quartile" selected="True" />
+                    <SelectField field="Mean" selected="True" />
+                    <SelectField field="Median" selected="True" />
+                    <SelectField field="3rd_Quartile" selected="True" />
+                    <SelectField field="Maximum" selected="True" />
+                    <SelectField field="Interquartile_Spread" selected="True" />
+                    <SelectField field="Min_Max_Spread" selected="True" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="40">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="848.0001" y="818.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="0">
+                    <Field field="Method" order="Ascending" />
+                    <Field field="Index" order="Ascending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Method - Ascending
+Index - Ascending</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+            <Node ToolID="41">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="932.0001" y="818.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>Clusters</Field>
+                    <Operator>=</Operator>
+                    <Operands>
+                      <Operand>4</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>[Clusters] = 4</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="42">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1028" y="782.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15156_bce8abba481b4765aadd976ae92c908c_\Engine_16180_804cfbdc66504a739e60b6639f667ac7_.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Profile</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="43">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1028" y="854.0014" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15156_bce8abba481b4765aadd976ae92c908c_\Engine_16180_194af5a0df42426bb680c41e081f83f9_.yxdb</TempFile>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="416" y="146.0013" width="697.0002" height="351.9987" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="645.0002" y="262.0012" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="441.0002" y="382.0014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'Neural Gas'" field="Method" size="23" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Method = 'Neural Gas'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="441.0001" y="274.0014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'K-Medians'" field="Method" size="23" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Method = 'K-Medians'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="441.0001" y="190.0013" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'K-Means'" field="Method" size="23" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Method = 'K-Means'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="741.0002" y="262.0012" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Method" selected="True" />
+                <SelectField field="Clusters" selected="True" />
+                <SelectField field="Index" selected="True" />
+                <SelectField field="Minimum" selected="True" />
+                <SelectField field="1st_Quartile" selected="True" />
+                <SelectField field="Mean" selected="True" />
+                <SelectField field="Median" selected="True" />
+                <SelectField field="3rd_Quartile" selected="True" />
+                <SelectField field="Maximum" selected="True" />
+                <SelectField field="Interquartile_Spread" selected="True" />
+                <SelectField field="Min_Max_Spread" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="849.0002" y="262.0012" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Method" order="Ascending" />
+                <Field field="Index" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Method - Ascending
+Index - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="933.0002" y="262.0012" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>Clusters</Field>
+                <Operator>=</Operator>
+                <Operands>
+                  <Operand>4</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Clusters] = 4</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1029" y="226.0012" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5800_f19bcec14812441b828ef9e41427fd3f_\Engine_16180_f6649c86c96846708258adfbfe131835_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1029" y="298.0012" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5800_f19bcec14812441b828ef9e41427fd3f_\Engine_16180_8e8c92c41b0d4db09bb3a62e9e0e9b80_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="79.99998" y="54" width="336.0008" height="500.0014" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 15</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="105" y="286.0015" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">..\files\PCA.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PCA.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Country_Code" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Country_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Long_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Table_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="PC1" source="R-DATA:" type="Double" />
+                <Field name="PC2" source="R-DATA:" type="Double" />
+                <Field name="PC3" source="R-DATA:" type="Double" />
+                <Field name="PC4" source="R-DATA:" type="Double" />
+                <Field name="Input_#2_PC1" source="R-DATA:" type="Double" />
+                <Field name="Input_#2_PC2" source="R-DATA:" type="Double" />
+                <Field name="Input_#2_PC3" source="R-DATA:" type="Double" />
+                <Field name="Input_#2_PC4" source="R-DATA:" type="Double" />
+                <Field name="Input_#3_PC1" source="R-DATA:" type="Double" />
+                <Field name="Input_#3_PC2" source="R-DATA:" type="Double" />
+                <Field name="Input_#3_PC3" source="R-DATA:" type="Double" />
+                <Field name="Input_#3_PC4" source="R-DATA:" type="Double" />
+                <Field name="EG_ELC_ACCS_ZS" source="CrossTab:Header:Name:EG_ELC_ACCS_ZS:Sum:" type="Double" />
+                <Field name="EN_POP_SLUM_UR_ZS" source="CrossTab:Header:Name:EN_POP_SLUM_UR_ZS:Sum:" type="Double" />
+                <Field name="FB_ATM_TOTL_P5" source="CrossTab:Header:Name:FB_ATM_TOTL_P5:Sum:" type="Double" />
+                <Field name="IC_ELC_TIME" source="CrossTab:Header:Name:IC_ELC_TIME:Sum:" type="Double" />
+                <Field name="IC_FRM_ISOC_ZS" source="CrossTab:Header:Name:IC_FRM_ISOC_ZS:Sum:" type="Double" />
+                <Field name="IC_TAX_TOTL_CP_ZS" source="CrossTab:Header:Name:IC_TAX_TOTL_CP_ZS:Sum:" type="Double" />
+                <Field name="IQ_WEF_PORT_XQ" source="CrossTab:Header:Name:IQ_WEF_PORT_XQ:Sum:" type="Double" />
+                <Field name="SE_XPD_TOTL_GD_ZS" source="CrossTab:Header:Name:SE_XPD_TOTL_GD_ZS:Sum:" type="Double" />
+                <Field name="SL_EMP_TOTL_SP_ZS" source="CrossTab:Header:Name:SL_EMP_TOTL_SP_ZS:Sum:" type="Double" />
+                <Field name="SL_TLF_SECO_ZS" source="CrossTab:Header:Name:SL_TLF_SECO_ZS:Sum:" type="Double" />
+                <Field name="SL_TLF_TOTL_IN" source="CrossTab:Header:Name:SL_TLF_TOTL_IN:Sum:" type="Double" />
+                <Field name="TM_TAX_MANF_SM_FN_ZS" source="CrossTab:Header:Name:TM_TAX_MANF_SM_FN_ZS:Sum:" type="Double" />
+                <Field name="UIS_PTRHC_2" source="CrossTab:Header:Name:UIS_PTRHC_2:Sum:" type="Double" />
+                <Field name="UIS_PTRHC_3" source="CrossTab:Header:Name:UIS_PTRHC_3:Sum:" type="Double" />
+                <Field name="UIS_PTRHC_56" source="CrossTab:Header:Name:UIS_PTRHC_56:Sum:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings>
+            <Position x="236.0003" y="134.0015" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="the fields">PC1 + PC2 + Input_#2_PC1 + Input_#2_PC2 + Input_#2_PC3 + Input_#2_PC4 + Input_#3_PC1 + EG_ELC_ACCS_ZS + EN_POP_SLUM_UR_ZS + FB_ATM_TOTL_P5 + IC_ELC_TIME + IC_FRM_ISOC_ZS + IC_TAX_TOTL_CP_ZS + IQ_WEF_PORT_XQ + SE_XPD_TOTL_GD_ZS + SL_EMP_TOTL_SP_ZS + SL_TLF_SECO_ZS + SL_TLF_TOTL_IN + TM_TAX_MANF_SM_FN_ZS + UIS_PTRHC_2 + UIS_PTRHC_3 + UIS_PTRHC_56</Value>
+              <Value name="standardize">True</Value>
+              <Value name="z score">True</Value>
+              <Value name="unit interval">False</Value>
+              <Value name="k-means">True</Value>
+              <Value name="k-medians">False</Value>
+              <Value name="neural gas">False</Value>
+              <Value name="min clus">3</Value>
+              <Value name="max clus">5</Value>
+              <Value name="bootstrap rep">50</Value>
+              <Value name="num seeds">3</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="K-Centroids_Diagnostics_K-version.yxmc" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings>
+            <Position x="236.0006" y="290.0014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="the fields">PC1 + PC2 + Input_#2_PC1 + Input_#2_PC2 + Input_#2_PC3 + Input_#2_PC4 + Input_#3_PC1 + EG_ELC_ACCS_ZS + EN_POP_SLUM_UR_ZS + FB_ATM_TOTL_P5 + IC_ELC_TIME + IC_FRM_ISOC_ZS + IC_TAX_TOTL_CP_ZS + IQ_WEF_PORT_XQ + SE_XPD_TOTL_GD_ZS + SL_EMP_TOTL_SP_ZS + SL_TLF_SECO_ZS + SL_TLF_TOTL_IN + TM_TAX_MANF_SM_FN_ZS + UIS_PTRHC_2 + UIS_PTRHC_3 + UIS_PTRHC_56</Value>
+              <Value name="standardize">True</Value>
+              <Value name="z score">True</Value>
+              <Value name="unit interval">False</Value>
+              <Value name="k-means">False</Value>
+              <Value name="k-medians">True</Value>
+              <Value name="neural gas">False</Value>
+              <Value name="min clus">3</Value>
+              <Value name="max clus">5</Value>
+              <Value name="bootstrap rep">50</Value>
+              <Value name="num seeds">3</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="K-Centroids_Diagnostics_K-version.yxmc" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings>
+            <Position x="236.0002" y="434.0014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="the fields">PC1 + PC2 + Input_#2_PC1 + Input_#2_PC2 + Input_#2_PC3 + Input_#2_PC4 + Input_#3_PC1 + EG_ELC_ACCS_ZS + EN_POP_SLUM_UR_ZS + FB_ATM_TOTL_P5 + IC_ELC_TIME + IC_FRM_ISOC_ZS + IC_TAX_TOTL_CP_ZS + IQ_WEF_PORT_XQ + SE_XPD_TOTL_GD_ZS + SL_EMP_TOTL_SP_ZS + SL_TLF_SECO_ZS + SL_TLF_TOTL_IN + TM_TAX_MANF_SM_FN_ZS + UIS_PTRHC_2 + UIS_PTRHC_3 + UIS_PTRHC_56</Value>
+              <Value name="standardize">True</Value>
+              <Value name="z score">True</Value>
+              <Value name="unit interval">False</Value>
+              <Value name="k-means">False</Value>
+              <Value name="k-medians">False</Value>
+              <Value name="neural gas">True</Value>
+              <Value name="min clus">3</Value>
+              <Value name="max clus">5</Value>
+              <Value name="bootstrap rep">50</Value>
+              <Value name="num seeds">3</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="K-Centroids_Diagnostics_K-version.yxmc" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="332" y="398.0014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5800_f19bcec14812441b828ef9e41427fd3f_\Engine_16180_16439a2c637b4cc3a0cc08dfdeb36b63_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="332.0001" y="470.0014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5800_f19bcec14812441b828ef9e41427fd3f_\Engine_16180_129c4819648f470394ed98222a93378b_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="332" y="242.0014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5800_f19bcec14812441b828ef9e41427fd3f_\Engine_16180_89564d31b43e400c97b7bc289b81f2aa_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="332.0001" y="326.0014" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5800_f19bcec14812441b828ef9e41427fd3f_\Engine_16180_1633a5b5ea8c46858d75e86617464fa8_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="332.0008" y="98" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5800_f19bcec14812441b828ef9e41427fd3f_\Engine_16180_f350f3e0f9e94fffaccd951a07875874_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="332" y="170.0011" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5800_f19bcec14812441b828ef9e41427fd3f_\Engine_16180_a22ffc4ead7d4eeaa5a314903576723b_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="47" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="48" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Reports" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output119" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output119" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Reports" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output119" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output119" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Reports" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output119" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output119" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="True" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="False" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="True" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="False" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="16" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="17" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="18" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Reports" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output119" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output119" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Reports" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output119" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output119" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Reports" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output119" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output119" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="-2" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>p7_step2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
