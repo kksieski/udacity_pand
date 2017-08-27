@@ -1,0 +1,1374 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.3">
+  <Nodes>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1350" y="96" width="696" height="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>DETERMINE CLUSTERS</Text>
+          <Font name="Segoe UI" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Lime" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="858" y="96" width="492" height="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>INVESTIGATE MODELS</Text>
+          <Font name="Segoe UI" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="128" g="255" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="96" width="804" height="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>WRANGLE DATA</Text>
+          <Font name="Segoe UI" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Yellow" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1992" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>KACPER KSIESKI</Text>
+          <Font name="Segoe UI" size="24" style="0" />
+          <TextColor name="White" />
+          <FillColor name="Blue" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File>..\files\storedemographicdata (3).csv</File>
+          <Passwords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storedemographicdata (3).csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="Age0to9" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="Age10to17" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="Age18to24" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="Age25to29" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="Age30to39" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="Age40to49" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="Age50to64" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="Age65Plus" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="EdLTHS" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="EdHSGrad" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="EdSomeCol" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="EdAssociate" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="EdBachelor" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="EdMaster" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="EdProfSchl" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="EdDoctorate" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHSz1Per" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHSz2Per" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHSz3Per" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHSz4Per" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHSz5PlusPer" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHIncU25K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHInc25Kto50K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHInc50Kto75K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHInc75Kto100K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHInc100Kto150K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHInc150Kto250K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HHInc250KPlus" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="PopAsian" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="PopBlack" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="PopHispanic" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="PopMulti" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="PopNativeAmer" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="PopOther" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="PopPacIsl" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="PopWhite" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HVal0to100K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HVal100Kto200K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HVal200Kto300K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HVal300Kto400K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HVal400Kto500K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HVal500Kto750K" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="HVal750KPlus" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+            <Field name="PopDens" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File>..\files\storeinformation (1).csv</File>
+          <Passwords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storeinformation (1).csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+            <Field name="Type" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="186" y="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Age0to9" selected="True" />
+            <Field field="Age10to17" selected="True" />
+            <Field field="Age18to24" selected="True" />
+            <Field field="Age25to29" selected="True" />
+            <Field field="Age30to39" selected="True" />
+            <Field field="Age40to49" selected="True" />
+            <Field field="Age50to64" selected="True" />
+            <Field field="Age65Plus" selected="True" />
+            <Field field="EdLTHS" selected="True" />
+            <Field field="EdHSGrad" selected="True" />
+            <Field field="EdSomeCol" selected="True" />
+            <Field field="EdAssociate" selected="True" />
+            <Field field="EdBachelor" selected="True" />
+            <Field field="EdMaster" selected="True" />
+            <Field field="EdProfSchl" selected="True" />
+            <Field field="EdDoctorate" selected="True" />
+            <Field field="HHSz1Per" selected="True" />
+            <Field field="HHSz2Per" selected="True" />
+            <Field field="HHSz3Per" selected="True" />
+            <Field field="HHSz4Per" selected="True" />
+            <Field field="HHSz5PlusPer" selected="True" />
+            <Field field="HHIncU25K" selected="True" />
+            <Field field="HHInc25Kto50K" selected="True" />
+            <Field field="HHInc50Kto75K" selected="True" />
+            <Field field="HHInc75Kto100K" selected="True" />
+            <Field field="HHInc100Kto150K" selected="True" />
+            <Field field="HHInc150Kto250K" selected="True" />
+            <Field field="HHInc250KPlus" selected="True" />
+            <Field field="PopAsian" selected="True" />
+            <Field field="PopBlack" selected="True" />
+            <Field field="PopHispanic" selected="True" />
+            <Field field="PopMulti" selected="True" />
+            <Field field="PopNativeAmer" selected="True" />
+            <Field field="PopOther" selected="True" />
+            <Field field="PopPacIsl" selected="True" />
+            <Field field="PopWhite" selected="True" />
+            <Field field="HVal0to100K" selected="True" />
+            <Field field="HVal100Kto200K" selected="True" />
+            <Field field="HVal200Kto300K" selected="True" />
+            <Field field="HVal300Kto400K" selected="True" />
+            <Field field="HVal400Kto500K" selected="True" />
+            <Field field="HVal500Kto750K" selected="True" />
+            <Field field="HVal750KPlus" selected="True" />
+            <Field field="PopDens" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="5" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="String" />
+            <Field name="Age0to9" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="Age10to17" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="Age18to24" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="Age25to29" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="Age30to39" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="Age40to49" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="Age50to64" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="Age65Plus" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="EdLTHS" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="EdHSGrad" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="EdSomeCol" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="EdAssociate" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="EdBachelor" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="EdMaster" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="EdProfSchl" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="EdDoctorate" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHSz1Per" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHSz2Per" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHSz3Per" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHSz4Per" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHSz5PlusPer" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHIncU25K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHInc25Kto50K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHInc50Kto75K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHInc75Kto100K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHInc100Kto150K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHInc150Kto250K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HHInc250KPlus" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="PopAsian" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="PopBlack" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="PopHispanic" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="PopMulti" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="PopNativeAmer" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="PopOther" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="PopPacIsl" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="PopWhite" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HVal0to100K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HVal100Kto200K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HVal200Kto300K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HVal300Kto400K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HVal400Kto500K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HVal500Kto750K" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="HVal750KPlus" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+            <Field name="PopDens" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storedemographicdata (3).csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="186" y="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Address" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="State" selected="True" />
+            <Field field="Zip" selected="True" />
+            <Field field="Type" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="5" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="String" />
+            <Field name="Address" size="29" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+            <Field name="City" size="21" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+            <Field name="State" size="2" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="String" />
+            <Field name="Zip" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="Int32" />
+            <Field name="Type" size="8" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="348" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">..\files\task1output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>task1output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Cluster" size="11" source="R-DATA:" type="String" />
+            <Field name="Address" size="29" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+            <Field name="City" size="21" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="V_String" />
+            <Field name="State" size="2" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="String" />
+            <Field name="Zip" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="Int32" />
+            <Field name="Type" size="8" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\p8Capstone\files\storeinformation (1).csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="618" y="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" />
+                <SelectField field="Right_Bakery" selected="False" />
+                <SelectField field="Right_Dairy" selected="False" />
+                <SelectField field="Right_Deli" selected="False" />
+                <SelectField field="Right_Dry_Grocery" selected="False" />
+                <SelectField field="Right_Floral" selected="False" />
+                <SelectField field="Right_Frozen_Food" selected="False" />
+                <SelectField field="Right_General_Merchandise" selected="False" />
+                <SelectField field="Right_Meat" selected="False" />
+                <SelectField field="Right_Produce" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings>
+        <Position x="726" y="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">80</Value>
+          <Value name="validation pct">20</Value>
+          <Value name="rand seed">3</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="402" y="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" />
+                <SelectField field="Right_Address" selected="False" />
+                <SelectField field="Right_City" selected="False" />
+                <SelectField field="Right_State" selected="False" />
+                <SelectField field="Right_Zip" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="510" y="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>Type</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>Existing</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Type] = "Existing"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="348" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Cluster" selected="True" type="String" size="11" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1361" y="148" width="671" height="266.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container OUTPUT CLUSTERS</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="57">
+          <GuiSettings>
+            <Position x="1530" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="score field">Score</Value>
+              <Value name="is oversampled">False</Value>
+              <Value name="oversampled value" />
+              <Value name="original percent">2.0</Value>
+              <Value name="log y">False</Value>
+              <Value name="prediction.interval">False</Value>
+              <Value name="interval.level">95</Value>
+              <Value name="append.xdf">False</Value>
+              <Value name="num.records">256000</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Age0to9" source="R-DATA:" type="Double" />
+                <Field name="Age10to17" source="R-DATA:" type="Double" />
+                <Field name="Age18to24" source="R-DATA:" type="Double" />
+                <Field name="Age25to29" source="R-DATA:" type="Double" />
+                <Field name="Age30to39" source="R-DATA:" type="Double" />
+                <Field name="Age40to49" source="R-DATA:" type="Double" />
+                <Field name="Age50to64" source="R-DATA:" type="Double" />
+                <Field name="Age65Plus" source="R-DATA:" type="Double" />
+                <Field name="EdLTHS" source="R-DATA:" type="Double" />
+                <Field name="EdHSGrad" source="R-DATA:" type="Double" />
+                <Field name="EdSomeCol" source="R-DATA:" type="Double" />
+                <Field name="EdAssociate" source="R-DATA:" type="Double" />
+                <Field name="EdBachelor" source="R-DATA:" type="Double" />
+                <Field name="EdMaster" source="R-DATA:" type="Double" />
+                <Field name="EdProfSchl" source="R-DATA:" type="Double" />
+                <Field name="EdDoctorate" source="R-DATA:" type="Double" />
+                <Field name="HHSz1Per" source="R-DATA:" type="Double" />
+                <Field name="HHSz2Per" source="R-DATA:" type="Double" />
+                <Field name="HHSz3Per" source="R-DATA:" type="Double" />
+                <Field name="HHSz4Per" source="R-DATA:" type="Double" />
+                <Field name="HHSz5PlusPer" source="R-DATA:" type="Double" />
+                <Field name="HHIncU25K" source="R-DATA:" type="Double" />
+                <Field name="HHInc25Kto50K" source="R-DATA:" type="Double" />
+                <Field name="HHInc50Kto75K" source="R-DATA:" type="Double" />
+                <Field name="HHInc75Kto100K" source="R-DATA:" type="Double" />
+                <Field name="HHInc100Kto150K" source="R-DATA:" type="Double" />
+                <Field name="HHInc150Kto250K" source="R-DATA:" type="Double" />
+                <Field name="HHInc250KPlus" source="R-DATA:" type="Double" />
+                <Field name="PopAsian" source="R-DATA:" type="Double" />
+                <Field name="PopBlack" source="R-DATA:" type="Double" />
+                <Field name="PopHispanic" source="R-DATA:" type="Double" />
+                <Field name="PopMulti" source="R-DATA:" type="Double" />
+                <Field name="PopNativeAmer" source="R-DATA:" type="Double" />
+                <Field name="PopOther" source="R-DATA:" type="Double" />
+                <Field name="PopPacIsl" source="R-DATA:" type="Double" />
+                <Field name="PopWhite" source="R-DATA:" type="Double" />
+                <Field name="HVal0to100K" source="R-DATA:" type="Double" />
+                <Field name="HVal100Kto200K" source="R-DATA:" type="Double" />
+                <Field name="HVal200Kto300K" source="R-DATA:" type="Double" />
+                <Field name="HVal300Kto400K" source="R-DATA:" type="Double" />
+                <Field name="HVal400Kto500K" source="R-DATA:" type="Double" />
+                <Field name="HVal500Kto750K" source="R-DATA:" type="Double" />
+                <Field name="HVal750KPlus" source="R-DATA:" type="Double" />
+                <Field name="PopDens" source="R-DATA:" type="Double" />
+                <Field name="Type" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Score_1" source="R-DATA:" type="Double" />
+                <Field name="Score_2" source="R-DATA:" type="Double" />
+                <Field name="Score_3" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Score.yxmc" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1626" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Age0to9" selected="False" />
+                <SelectField field="Age10to17" selected="False" />
+                <SelectField field="Age18to24" selected="False" />
+                <SelectField field="Age25to29" selected="False" />
+                <SelectField field="Age30to39" selected="False" />
+                <SelectField field="Age40to49" selected="False" />
+                <SelectField field="Age50to64" selected="False" />
+                <SelectField field="Age65Plus" selected="False" />
+                <SelectField field="EdLTHS" selected="False" />
+                <SelectField field="EdHSGrad" selected="False" />
+                <SelectField field="EdSomeCol" selected="False" />
+                <SelectField field="EdAssociate" selected="False" />
+                <SelectField field="EdBachelor" selected="False" />
+                <SelectField field="EdMaster" selected="False" />
+                <SelectField field="EdProfSchl" selected="False" />
+                <SelectField field="EdDoctorate" selected="False" />
+                <SelectField field="HHSz1Per" selected="False" />
+                <SelectField field="HHSz2Per" selected="False" />
+                <SelectField field="HHSz3Per" selected="False" />
+                <SelectField field="HHSz4Per" selected="False" />
+                <SelectField field="HHSz5PlusPer" selected="False" />
+                <SelectField field="HHIncU25K" selected="False" />
+                <SelectField field="HHInc25Kto50K" selected="False" />
+                <SelectField field="HHInc50Kto75K" selected="False" />
+                <SelectField field="HHInc75Kto100K" selected="False" />
+                <SelectField field="HHInc100Kto150K" selected="False" />
+                <SelectField field="HHInc150Kto250K" selected="False" />
+                <SelectField field="HHInc250KPlus" selected="False" />
+                <SelectField field="PopAsian" selected="False" />
+                <SelectField field="PopBlack" selected="False" />
+                <SelectField field="PopHispanic" selected="False" />
+                <SelectField field="PopMulti" selected="False" />
+                <SelectField field="PopNativeAmer" selected="False" />
+                <SelectField field="PopOther" selected="False" />
+                <SelectField field="PopPacIsl" selected="False" />
+                <SelectField field="PopWhite" selected="False" />
+                <SelectField field="HVal0to100K" selected="False" />
+                <SelectField field="HVal100Kto200K" selected="False" />
+                <SelectField field="HVal200Kto300K" selected="False" />
+                <SelectField field="HVal300Kto400K" selected="False" />
+                <SelectField field="HVal400Kto500K" selected="False" />
+                <SelectField field="HVal500Kto750K" selected="False" />
+                <SelectField field="HVal750KPlus" selected="False" />
+                <SelectField field="PopDens" selected="False" />
+                <SelectField field="Type" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1722" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Max([Score_1], [Score_2], [Score_3])" field="max_cluster" size="8" type="Double" />
+                <FormulaField expression="IF [max_cluster]=[Score_1] &#xA;THEN '1' &#xA;ELSEIF [max_cluster]=[Score_2] &#xA;THEN '2' &#xA;ELSE '3' &#xA;ENDIF" field="cluster" size="7" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>max_cluster = Max([Score_1], [Score_2], [Score_3])
+cluster = IF [max_cluster]=[S...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1818" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Score_1" selected="False" />
+                <SelectField field="Score_2" selected="False" />
+                <SelectField field="Score_3" selected="False" />
+                <SelectField field="max_cluster" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1902" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">..\files\task2output.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>task2output.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings>
+            <Position x="1386" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model.name">BOOSTED_MODEL</Value>
+              <Value name="select.target">Cluster</Value>
+              <Value name="select.predictors">Store=False,Age0to9=True,Age10to17=True,Age18to24=True,Age25to29=True,Age30to39=True,Age40to49=True,Age50to64=True,Age65Plus=True,EdLTHS=True,EdHSGrad=True,EdSomeCol=True,EdAssociate=True,EdBachelor=True,EdMaster=True,EdProfSchl=True,EdDoctorate=True,HHSz1Per=True,HHSz2Per=True,HHSz3Per=True,HHSz4Per=True,HHSz5PlusPer=True,HHIncU25K=True,HHInc25Kto50K=True,HHInc50Kto75K=True,HHInc75Kto100K=True,HHInc100Kto150K=True,HHInc150Kto250K=True,HHInc250KPlus=True,PopAsian=True,PopBlack=True,PopHispanic=True,PopMulti=True,PopNativeAmer=True,PopOther=True,PopPacIsl=True,PopWhite=True,HVal0to100K=True,HVal100Kto200K=True,HVal200Kto300K=True,HVal300Kto400K=True,HVal400Kto500K=True,HVal500Kto750K=True,HVal750KPlus=True,PopDens=True,Type=False,Cluster=False,Address=False,City=False,State=False,Zip=False,Right_Type=False</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights">Age0to9</Value>
+              <Value name="marginal.plots">False</Value>
+              <Value name="plot.min.importance">2.5</Value>
+              <Value name="type.distribution">False</Value>
+              <Value name="type.continuous">True</Value>
+              <Value name="dist.gaussian">True</Value>
+              <Value name="dist.laplace">False</Value>
+              <Value name="dist.t">False</Value>
+              <Value name="t.df">4</Value>
+              <Value name="type.count">False</Value>
+              <Value name="type.binomial">False</Value>
+              <Value name="dist.bernoulli">True</Value>
+              <Value name="dist.adaboost">False</Value>
+              <Value name="type.multinomial">False</Value>
+              <Value name="n.trees">4000</Value>
+              <Value name="assess.cv">True</Value>
+              <Value name="num.folds">5</Value>
+              <Value name="n.cores">1</Value>
+              <Value name="assess.test">False</Value>
+              <Value name="train.fraction">50.0</Value>
+              <Value name="assess.oob">False</Value>
+              <Value name="bag.fraction">50.0</Value>
+              <Value name="shrinkage">0.0020</Value>
+              <Value name="interaction.depth">1</Value>
+              <Value name="n.minobsinnode">10</Value>
+              <Value name="rand.seed">1</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1470" y="330.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9992_5f3d89309cb745ca813c3e0012af3139_\Engine_18092_c44afa5afb8944c89fa734b6aa19186d_.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="869" y="148" width="469" height="300" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container INVESTIGATE MODELS</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings>
+            <Position x="894" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Model Name">FOREST</Value>
+              <Value name="Y Var">Cluster</Value>
+              <Value name="X Vars">Age0to9 + Age10to17 + Age18to24 + Age25to29 + Age30to39 + Age40to49 + Age50to64 + Age65Plus + EdLTHS + EdHSGrad + EdSomeCol + EdAssociate + EdBachelor + EdMaster + EdProfSchl + EdDoctorate + HHSz1Per + HHSz2Per + HHSz3Per + HHSz4Per + HHSz5PlusPer + HHIncU25K + HHInc25Kto50K + HHInc50Kto75K + HHInc75Kto100K + HHInc100Kto150K + HHInc150Kto250K + HHInc250KPlus + PopAsian + PopBlack + PopHispanic + PopMulti + PopNativeAmer + PopOther + PopPacIsl + PopWhite + HVal0to100K + HVal100Kto200K + HVal200Kto300K + HVal300Kto400K + HVal400Kto500K + HVal500Kto750K + HVal750KPlus + PopDens</Value>
+              <Value name="Num Trees">500</Value>
+              <Value name="Custom Num Vars">False</Value>
+              <Value name="Num Vars">3</Value>
+              <Value name="model.size">False</Value>
+              <Value name="total.nodes">100</Value>
+              <Value name="max.depth">10</Value>
+              <Value name="node.size">5</Value>
+              <Value name="replace">True</Value>
+              <Value name="samp.rate">100</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>FOREST</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings>
+            <Position x="894.0001" y="348" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model.name">BOOST</Value>
+              <Value name="select.target">Cluster</Value>
+              <Value name="select.predictors">Store=False,Age0to9=True,Age10to17=True,Age18to24=True,Age25to29=True,Age30to39=True,Age40to49=True,Age50to64=True,Age65Plus=True,EdLTHS=True,EdHSGrad=True,EdSomeCol=True,EdAssociate=True,EdBachelor=True,EdMaster=True,EdProfSchl=True,EdDoctorate=True,HHSz1Per=True,HHSz2Per=True,HHSz3Per=True,HHSz4Per=True,HHSz5PlusPer=True,HHIncU25K=True,HHInc25Kto50K=True,HHInc50Kto75K=True,HHInc75Kto100K=True,HHInc100Kto150K=True,HHInc150Kto250K=True,HHInc250KPlus=True,PopAsian=True,PopBlack=True,PopHispanic=True,PopMulti=True,PopNativeAmer=True,PopOther=True,PopPacIsl=True,PopWhite=True,HVal0to100K=True,HVal100Kto200K=True,HVal200Kto300K=True,HVal300Kto400K=True,HVal400Kto500K=True,HVal500Kto750K=True,HVal750KPlus=True,PopDens=True,Type=False,Cluster=False,Address=False,City=False,State=False,Zip=False,Right_Type=False</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights">Age0to9</Value>
+              <Value name="marginal.plots">False</Value>
+              <Value name="plot.min.importance">2.5</Value>
+              <Value name="type.distribution">False</Value>
+              <Value name="type.continuous">True</Value>
+              <Value name="dist.gaussian">True</Value>
+              <Value name="dist.laplace">False</Value>
+              <Value name="dist.t">False</Value>
+              <Value name="t.df">4</Value>
+              <Value name="type.count">False</Value>
+              <Value name="type.binomial">False</Value>
+              <Value name="dist.bernoulli">True</Value>
+              <Value name="dist.adaboost">False</Value>
+              <Value name="type.multinomial">False</Value>
+              <Value name="n.trees">4000</Value>
+              <Value name="assess.cv">True</Value>
+              <Value name="num.folds">5</Value>
+              <Value name="n.cores">1</Value>
+              <Value name="assess.test">False</Value>
+              <Value name="train.fraction">50.0</Value>
+              <Value name="assess.oob">False</Value>
+              <Value name="bag.fraction">50.0</Value>
+              <Value name="shrinkage">0.0020</Value>
+              <Value name="interaction.depth">1</Value>
+              <Value name="n.minobsinnode">10</Value>
+              <Value name="rand.seed">1</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>BOOST</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings>
+            <Position x="894" y="264" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Model Name">TREE</Value>
+              <Value name="Y Var">Cluster</Value>
+              <Value name="X Vars">Age0to9 + Age10to17 + Age18to24 + Age25to29 + Age30to39 + Age40to49 + Age50to64 + Age65Plus + EdLTHS + EdHSGrad + EdSomeCol + EdAssociate + EdBachelor + EdMaster + EdProfSchl + EdDoctorate + HHSz1Per + HHSz2Per + HHSz3Per + HHSz4Per + HHSz5PlusPer + HHIncU25K + HHInc25Kto50K + HHInc50Kto75K + HHInc75Kto100K + HHInc100Kto150K + HHInc150Kto250K + HHInc250KPlus + PopAsian + PopBlack + PopHispanic + PopMulti + PopNativeAmer + PopOther + PopPacIsl + PopWhite + HVal0to100K + HVal100Kto200K + HVal200Kto300K + HVal300Kto400K + HVal400Kto500K + HVal500Kto750K + HVal750KPlus + PopDens</Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights">Age0to9</Value>
+              <Value name="cp">0</Value>
+              <Value name="select.type">True</Value>
+              <Value name="classification">True</Value>
+              <Value name="use.gini">True</Value>
+              <Value name="use.information">False</Value>
+              <Value name="regression">False</Value>
+              <Value name="min.split">20</Value>
+              <Value name="min.bucket">7</Value>
+              <Value name="usesurrogate.0">True</Value>
+              <Value name="usesurrogate.1">False</Value>
+              <Value name="usesurrogate.2">False</Value>
+              <Value name="total.correct">True</Value>
+              <Value name="percent.correct">False</Value>
+              <Value name="xval.folds">10</Value>
+              <Value name="max.depth">20</Value>
+              <Value name="max.bins" />
+              <Value name="tree.plot">False</Value>
+              <Value name="Counts">True</Value>
+              <Value name="Proportions">False</Value>
+              <Value name="Branch Dist">False</Value>
+              <Value name="tree.inches">True</Value>
+              <Value name="tree.in.w">5.50</Value>
+              <Value name="tree.in.h">5.50</Value>
+              <Value name="tree.centimeters">False</Value>
+              <Value name="tree.cm.w">13.00</Value>
+              <Value name="tree.cm.h">14.95</Value>
+              <Value name="tree.graph.resolution">1x</Value>
+              <Value name="tree.pointsize">8</Value>
+              <Value name="prune.plot">False</Value>
+              <Value name="prune.inches">True</Value>
+              <Value name="prune.in.w">5.50</Value>
+              <Value name="prune.in.h">5.50</Value>
+              <Value name="prune.centimeters">False</Value>
+              <Value name="prune.cm.w">13.00</Value>
+              <Value name="prune.cm.h">14.95</Value>
+              <Value name="prune.graph.resolution">1x</Value>
+              <Value name="prune.pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Decision Tree (10)</Name>
+              <AnnotationText>TREE</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Decision_Tree.yxmc" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings>
+            <Position x="1158" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="target.level" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="predictions">
+              <RecordInfo>
+                <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="TREE" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="FOREST" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="BOOST" size="1073741823" source="R-DATA:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="error_measures">
+              <RecordInfo>
+                <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Accuracy" source="R-DATA:" type="Double" />
+                <Field name="Accuracy_1" source="R-DATA:" type="Double" />
+                <Field name="Accuracy_2" source="R-DATA:" type="Double" />
+                <Field name="Accuracy_3" source="R-DATA:" type="Double" />
+                <Field name="F1" source="R-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Report">
+              <RecordInfo>
+                <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+                <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Model+Comparison\Model Comparison.yxmc" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1050" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="990" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_14576_2a2e2910f9e04fd4ae673b041c9b1c44_\Engine_18092_713c32bc9aef457c8135199d909fb2e0_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="990" y="348.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_14576_2a2e2910f9e04fd4ae673b041c9b1c44_\Engine_18092_9393475c40384cf9a33cea89e8d848a9_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1254" y="192" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_14576_2a2e2910f9e04fd4ae673b041c9b1c44_\Engine_18092_e3dcc5f790ed42da96b1390047cc67ff_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="990" y="252" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_14576_2a2e2910f9e04fd4ae673b041c9b1c44_\Engine_18092_ed16aa7defd049a3a27157989002aa5b_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="990" y="288" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_14576_2a2e2910f9e04fd4ae673b041c9b1c44_\Engine_18092_f6270251a4a1418db04645c7ba3f158d_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Estimation" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Estimation" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Estimation" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Validation" />
+      <Destination ToolID="26" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="26" Connection="Models" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="False" />
+      <Destination ToolID="57" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="57" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Report" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Reports" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Report" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Reports" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Interactive" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Report" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="-2" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>p8_step2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>Kacper Ksieski</Author>
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="https://github.com/kksieski/udacity_pand" displayed="https://github.com/kksieski/udacity_pand" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
