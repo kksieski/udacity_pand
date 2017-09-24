@@ -1,0 +1,337 @@
+Project Overview
+In this project, you'll use Tableau to build dashboards and tell a story with data. This is an essential skill as an analyst. You'll be exploring data from The Movie Database to draw out and display interesting patterns.
+
+You'll start by defining some leading questions, then you'll explore the data to find answers, and finally build visualizations to communicate those answers and tell a story.
+
+Installing Tableau
+If you haven't already done so, you'll need to install Tableau onto your computer. Follow this link for more information on how to download and install Tableau on your computer.
+
+In order for reviewers to be able to see your project, you must save it as a Tableau Public file and upload it to Tableau servers. Here is a link for instructions on how to do this.
+
+How Do I Complete this Project?
+This project uses skills learned throughout the "Data Visualization in Tableau” course. To complete this project:
+
+Go through the course
+Apply the skills learned in the course to complete the project outline in the project details section.
+Use our guidelines and rubric to help build your project.
+When you're ready, submit it to us for review using the submission template found in the supporting materials section.
+Skills Required
+In order to complete this project, you must be able to:
+
+Explore data using Tableau
+Create Tableau Dashboards
+
+The Movie Database Data
+The Movie Database provides movie data for public use, you can find it here.
+
+Project Details
+You are a business analyst consultant and your client is a new movie production company looking to make a new movie. The client wants to make sure it’s successful to help make a name for the new company. They are relying on you to help understand movie trends to help inform their decision making. They’ve given you guidance to look into three specific areas:
+
+Question 1: How have movie genres changed over time?
+Question 2: How do the attributes differ between Universal Pictures and Paramount Pictures?
+Question 3: How have movies based on novels performed relative to movies not based on novels?
+On top of that, the client asked you to explore one other question that you find interesting based on the data provided.
+
+Submission
+Your submission should be a PDF file containing answers to the each of the questions above (including your own). Your PDF should include a link to an online Tableau Public dashboard. The dashboard should contain a minimum of 2 and a maximum of 3 visualizations that help answer the question, one dashboard per question (4 dashboards total). Be sure to include the question you are answering by naming the dashboard Q1, Q2, etc. Hide any non-dashboard sheets that you used to make calculations or support your dashboards so that the final submission is clean and uncluttered.
+For one of the questions, in addition to creating a dashboard, create a narrative told through visualizations and text using the Tableau Stories feature. Indicate which question you are creating a story from by naming the Story after the question i.e. ‘Q3 Story’.
+Submission Requirements
+You should include at least one of each of these figures (among all the dashboards, not in each out):
+
+Line plot (if time/date data is available)
+Shape (scatter) plot
+Bar chart
+Small multiple
+Also, include the following uses of color/shape/size:
+
+Group by color/shape
+Indicate a third continuous dimension with color and/or size
+For example, if you have a scatter plot comparing 2 different studios’ revenue over time, you can indicate each studio by color and present them in the same plot.
+Choose appropriate color palettes (diverging, sequential, colorblind friendly). You can refer to this concept for a refresher.
+Demonstrate an effective use of labels:
+
+Clear labels on all axes and legends
+Label data of interest (Optional)
+Include interactivity in dashboards and stories:
+
+Filters
+Highlighting or other actions
+There is a text narrative present in one of the dashboards
+Submission Format
+Your submission should be in the form of a PDF file containing answers to the questions and a link to an online Tableau Public dashboard. Important: Note that simply saving your file as a .twbx document is not enough for all reviewers to have access to your project.
+
+
+Review
+Use the project rubric to ensure you meet all the requirements of your project. If you are happy with your submission, then you're ready to submit your project. If you see room for improvement, keep working to improve your project.
+
+Data
+The Movie Database data can be found in a file called movies.csv at the bottom of this page. To help you understand the data found in movies.csv here is a breakdown of what every field (column) means:
+
+id: Identification number
+imdb_id: IMDB identification number
+popularity: Relative number of page views on The Movie Database
+budget: Budget in USD
+revenue: Revenue in USD
+original_title: Movie title
+cast: list of cast members separated by |, max five actors
+homepage: URL for the movie homepage
+director: list of directors separated by |, max five directors
+tagline: Tagline for the movie
+keywords: list of keywords associated with the movie, separated by |, max five keywords
+overview: Summary of the plot
+runtime: Movie runtime in minutes
+genres: list of genres separated by |, max five genres
+production_companies: list of production companies separated by |, max five companies
+release_date: Original release date
+vote_count: Number of votes
+vote_average: Average of votes
+release_year: Release year
+budget_adj: Budget adjusted for inflation, in 2010 US dollars
+revenue_adj: Revenue adjusted for inflation, in 2010 US dollars
+NOTE: Depending on the browser you use, the data may be opened into a separate tab within your browser. If so, right click on the data and click Save As and then you can open it through a spreadsheet application or directly with Tableau.
+Relevant Forum Posts:
+
+https://discussions.udacity.com/c/nd008-bizand-visualizing-data-with-tableau/band-project-3 https://discussions.udacity.com/c/nd008-bizand-visualizing-data-with-tableau
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A/B Testing for Business Analysis
+each individual in an experiment is a unit, a unit is a person, store, production line, website, etc
+treatment group, collection of units that will get the change or thing being tested
+treatment, the thing being tested
+control group, baseline for comparison with no treatment applied, comprises control units
+target variable is the thing we are trying to predict
+independent, treatment, experimental variable, the thing you change to see how it affects the target
+control variables are used to make sure that the control and treatment units are as similar as possible
+
+5 steps to determine control variables
+list potential variables
+is variable data available
+logical connection between control and target variables
+test correlation between control and target variables
+test intercorrelation between control variables
+
+use association analysis and plot of means
+15 observations is minimum for student's t test
+
+beware lurking (confounding) variables, highly correlated with target variable and another control variable
+
+run A/B test for at least one cycle
+randomised design and matched pair design
+randomised design
+treatment and control units are selected randomly
+little opportunity to control variables
+volume and velocity of data is high
+cost per observation is low
+units are selected randomly on the fly
+
+matched pair design
+volume and velocity of data is low
+concern of bias is great
+cost per observation is high
+treatments are matched to controls on a unit by unit basis
+all units must be known beforehand
+
+
+considerations when setting up 
+unit of diversion refers to how you will assign units to treatment and control groups
+determine population 
+duration of experiment 
+size of experiment 
+
+sample size must be large enough and be representative of the population
+clean data
+calculate lift or difference in observations between treatment and control groups
+
+test of means analysis, whether mean values of treatment and control groups are the same
+
+
+Matched Pair Experiment
+if you have to pick the treatment units
+identify outliers
+decide on number of treatment units
+randomly select treatment units
+
+algorithms take all control variables and calculate one value of how different a treatment unit is from a control unit, known as a distance score
+alteryx uses kd tree
+
+balance between more matches and the average distance score
+
+ab tool in alteryx, treatment to t, control to d
+
+
+
+TIME SERIES FORECASTING
+use of statistical model to predict future values based on past results
+Attributes of a Time Series
+It's over a continuous time interval
+There are sequential measurements across that interval
+There is equal spacing between every two consecutive measurements
+Each time unit within the time interval has at most one data point
+
+ETS
+error, trend, seasonality
+
+time series decomposition plot
+
+additive method useful when the trend and seasonal variation are relatively constant over time
+
+multiplicative method useful when the trend and seasonality variation increases or decreases in magnitude over time
+
+Time Series Scenarios
+Next we're going to be exploring several different exponential models to understand how each model is different and which model should be used for which specific scenario you'll see in a time series. The possible time series (TS) scenarios can be recognized by asking the following questions:
+
+TS has a trend?
+If yes, is the trend increasing linearly or exponentially?
+TS has seasonality?
+If yes, do the seasonal components increase in magnitude over time?
+Scenarios
+Therefore the scenarios could be:
+
+No-Trend, No-Seasonal
+No-Trend, Seasonal-Constant
+No-Trend, Seasonal-Increasing
+Trend-Linear,No-Seasonal
+Trend-Linear,Seasonal-Constant
+Trend-Linear,Seasonal-Increasing
+Trend-Exponential,No-Seasonal
+Trend-Exponential,Seasonal-Constant
+Trend-Exponential,Seasonal-Increasing
+As you can see there are nine possible scenarios.
+
+ETS Models
+We are going to explore four ETS models that can help forecast these possible time-series scenarios.
+
+Simple Exponential Smoothing Method
+Holt's Linear Trend Method
+Exponential Trend Method
+Holt-Winters Seasonal Method
+
+Methods
+There are several methods we need to pick in order to model any given time series appropriately:
+
+Simple Exponential Smoothing
+Finds the level of the time series
+Holt's Linear Trend
+Finds the level of the time series
+Additive model for linear trend
+Exponential Trend
+Finds the level of the time series
+Multiplicative model for exponential trend
+Holt-Winters Seasonal
+Finds the level of the time series
+Additive for trend
+Multiplicative and Additive for seasonal components
+These methods help deal with different scenarios in our time series involving:
+
+Linear or exponential trend
+Constant or increasing seasonality components
+For trends that are exponential, we would need to use a multiplicative model.
+
+For increasing seasonality components, we would need to use a multiplicative model model as well.
+
+ETS
+Therefore we can generalize all of these models using a naming system for ETS:
+
+ETS (Error, Trend, Seasonality)
+Error is the error line we saw in the time series decomposition part earlier in the course. If the error is increasing similar to an increasing seasonal components, we would need to consider a multiplicative design for the exponential model.
+
+Therefore, for each component in the ETS system, we can assign None, Multiplicative, or Additive (or N, M, A) for each of the three components in our time series.
+
+Examples
+A time series model that has a constant error, linear trend, and increasing seasonal components means we would need to use an ETS model of:
+
+ETS(N,A,M)
+A time series model that has increasing error, exponential trend, and no seasonality means we would need to use an ETS model of:
+
+ETS(M,M,N)
+
+ETS Models
+ETS models are designed to forecast time series data by observing the trend and seasonality patterns in a time series, and projecting those trends into the future.
+STEP 1: TIME SERIES DECOMPOSITION PLOT
+A time series decomposition plot allows you to observe the seasonality, trend, and error/remainder terms of a time series.
+Useful Alteryx Tool: TS Plot
+STEP 2: DETERMINE ERROR, TREND, AND SEASONALITY
+An ETS model has three main components: error, trend, and seasonality. Each can be applied either additively, multiplicatively, or not at all.
+Trend - If the trend plot is linear then we apply it additively (A). If the trend line grows or shrinks exponentially, we apply it multiplicatively (M). If there is no clear trend, no trend component is included (N).
+Seasonal - If the peaks and valleys for seasonality are constant over time, we apply it additively (A). If the size of the seasonal fluctuations tends to increase or decrease with the level of time series, we apply it multiplicatively (M). If there is no seasonality, it is not applied (N).
+Error -  If the error plot has constant variance over time (peaks and valleys are about the same size), we apply it additively (A). If the error plot is fluctuating between large and small errors over time, we apply it multiplicatively (M).
+Useful Alteryx Tool: TS Plot
+STEP 3: BUILD AND VALIDATE THE ETS MODEL
+Build the ETS model using the components determined in step 2. You can use internal and external validation to validate the quality of the model.
+Internal validation: Look at in-sample error measures, particularly RMSE (Root-Mean-Square Error) and MASE (Mean Absolute Scaled Error).
+External validation: Determine the accuracy measures by comparing the forecasted values with the holdout sample. This is especially important for comparing ETS models to other types of models, such as ARIMA.
+Pick the ETS model with lowest AIC value. If the AIC values are comparable, use calculated errors to pick one that minimizes error the most. Many software tools will automate the selection of the model by minimizing AIC.
+Useful Alteryx Tools: ETS, TS Compare
+STEP 4: FORECAST!
+Use the best ETS model to forecast for the desired time period. Make sure to add the holdout sample back into the model. Plot the results along with 80% and 95% confidence intervals.
+Useful Alteryx Tool: TS Forecast
+
+
+P6
+Attributes of a Time Series
+It's over a continuous time interval
+There are sequential measurements across that interval
+There is equal spacing between every two consecutive measurements
+Each time unit within the time interval has at most one data point
+
+SEASONAL
+AR, positive autocorrelation
+acf decays and pacf drops
+MA, negative autocorrelation
+acf drops and pacf decays
+
+Step 1 - Check stationarity: If a time series has a trend or seasonality component, it must be made stationary before we can use ARIMA to forecast. Use the TS Plot tool to see if the time series is stationary.
+Step 2 - Difference: If the time series is not stationary, it needs to be stationarized through differencing. Take the first difference, then check for stationarity. Take as many differences as it takes. Make sure you check seasonal differencing as well.
+Step 3 - Filter out a validation sample: This will be used to validate how accurate our model is. Use the last 6 periods as the validation sample.
+Step 4 - Select AR and MA terms: Use the ACF and PACF to decide whether to include an AR term(s), MA term(s), or both.
+Step 5 - Build the model: Build the model and set the number of periods to forecast to 6.
+Step 6 - Validate model: Compare the predicted values to the actuals in the validation sample.
+
+Interpreting Measures of Error
+Scale Dependent Errors
+Scale dependent errors, such as mean error (ME) mean percentage error (MPE), mean absolute error (MAE) and root mean squared error (RMSE), are based on a set scale, which for us is our time series, and cannot be used to make comparisons that are on a different scale. For example, we wouldn’t take these error values from a time series model of the sheep population in Scotland and compare it to corn production forecast in the United States.
+
+Mean Error (ME) shows the average of the difference between actual and forecasted values.
+Mean Percentage Error (MPE) shows the average of the percent difference between actual and forecasted values. Both the ME and MPE will help indicate whether the forecasts are biased to be disproportionately positive or negative.
+Root Mean Squared Error (RMSE) represents the sample standard deviation of the differences between predicted values and observed values. These individual differences are called residuals when the calculations are performed over the data sample that was used for estimation, and are called prediction errors when computed out-of-sample. This is a great measurement to use when comparing models as it shows how many deviations from the mean the forecasted values fall.
+Mean Absolute Error (MAE) takes the sum of the absolute difference from actual to forecast and averages them. It is less sensitive to the occasional very large error because it does not square the errors in the calculation.
+Percentage Errors
+Percentage errors, like MAPE, are useful because they are scale independent, so they can be used to compare forecasts between different data series, unlike scale dependent errors. The disadvantage is that it cannot be used if the series has zero values.
+
+Mean Absolute Percentage Error (MAPE) is also often useful for purposes of reporting, because it is expressed in generic percentage terms it will make sense even to someone who has no idea what constitutes a "big" error in terms of dollars spent or widgets sold.
+Scale-Free Errors
+Scale-free errors were introduced more recently to offer a scale-independent measure that doesn't have many of the problems of other errors like percentage errors.
+
+Mean Absolute Scaled Error (MASE) is another relative measure of error that is applicable only to time series data. It is defined as the mean absolute error of the model divided by the the mean absolute value of the first difference of the series. Thus, it measures the relative reduction in error compared to a naive model. Ideally its value will be significantly less than 1 but is relative to comparison across other models for the same series. Since this error measurement is relative and can be applied across models, it is accepted as one of the best metrics for error measurement.
+
+Because of seasonality, look at lag 13, it is not significant, 
+In acf, first term is negative which indicates q=1, it’s rare to have p and q so p=0
+Monthly indicates the bracketed 12
+
+
+
+P7
+
+
+
+
+
+Exploratory Factor Analysis
+accounts for correlation between variables
+
+
+Principle Component Analysis
+accounts for total variation

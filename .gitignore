@@ -1,0 +1,13 @@
+# folders to ignore
+
+
+# files to ignore
+*.tde
+*.yxmd
+
+
+
+# reference sites
+# https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files
+# https://git-scm.com/docs/gitignore
+# https://help.github.com/articles/ignoring-files/

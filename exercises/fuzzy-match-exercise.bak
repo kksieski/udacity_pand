@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.5">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="16" />
+          <Fields>
+            <Field name="ID" />
+            <Field name="trans_dt" />
+            <Field name="acct_holder" />
+            <Field name="amt" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>2015-03-10</c>
+              <c>GLEN &amp; ALLENS HARDWARE CO</c>
+              <c>12056</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>2015-03-10</c>
+              <c>BROWNSVILLE DEPT OF REVENUE</c>
+              <c>554</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>2015-03-10</c>
+              <c>WOLFMAN CO</c>
+              <c>300</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>2015-03-11</c>
+              <c>THE WOLFMAN CMPY</c>
+              <c>302</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>2015-03-11</c>
+              <c>CANDLEWICK RESEARCH DEPT</c>
+              <c>1810</c>
+            </r>
+            <r>
+              <c>6</c>
+              <c>2015-03-12</c>
+              <c>CO TEXTILE AND VARNISH</c>
+              <c>890</c>
+            </r>
+            <r>
+              <c>7</c>
+              <c>2015-03-12</c>
+              <c>WOLFMAN CO LLC</c>
+              <c>63</c>
+            </r>
+            <r>
+              <c>8</c>
+              <c>2015-03-12</c>
+              <c>GLEN AND ALLENS HARDWARE CMPY</c>
+              <c>8227</c>
+            </r>
+            <r>
+              <c>9</c>
+              <c>2015-03-12</c>
+              <c>BUNDICK LUMBER LIQUIDATORS LLC</c>
+              <c>16471</c>
+            </r>
+            <r>
+              <c>10</c>
+              <c>2015-03-13</c>
+              <c>TARLEY MAST BUILDERS INC</c>
+              <c>2406</c>
+            </r>
+            <r>
+              <c>11</c>
+              <c>2015-03-14</c>
+              <c>BROWNSVILLE DEPARTMENT OF REVENUE</c>
+              <c>648</c>
+            </r>
+            <r>
+              <c>12</c>
+              <c>2015-03-14</c>
+              <c>SMOKIN CHARLIES TRANSPORT CO</c>
+              <c>4205</c>
+            </r>
+            <r>
+              <c>13</c>
+              <c>2015-03-15</c>
+              <c>BROWNSVILLE DEPARTMENT OF TRANSPORTATION</c>
+              <c>21</c>
+            </r>
+            <r>
+              <c>14</c>
+              <c>2015-03-15</c>
+              <c>COLORADO TEXTILE AND VARNISH</c>
+              <c>192</c>
+            </r>
+            <r>
+              <c>15</c>
+              <c>2015-03-16</c>
+              <c>COLORADO DEPT OF THE TREASURY</c>
+              <c>500</c>
+            </r>
+            <r>
+              <c>16</c>
+              <c>2015-03-17</c>
+              <c>COLORADO DEPT OF THE TREASURY</c>
+              <c>3</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Fuzzy Match Exercise</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
