@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File>C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv</File>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>data-prep-exercise-results.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Date Last Winter Freeze" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Date First Winter Freeze" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Growing Season Length" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Jan" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Feb" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Mar" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Apr" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip May" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Jun" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Jul" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Aug" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Sep" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Oct" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Nov" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Precip Dec" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Jan" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Feb" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Mar" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Apr" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain May" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Jun" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Jul" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Aug" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Sep" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Oct" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Nov" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Rain Dec" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Jan" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Feb" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Mar" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Apr" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow May" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Jun" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Jul" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Aug" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Sep" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Oct" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Nov" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Snow Dec" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Jan" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Feb" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Mar" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Apr" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp May" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Jun" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Jul" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Aug" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Sep" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Oct" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Nov" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Temp Dec" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Elevation" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="LastWinterFreezeDiff" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="FirstWinterFreezeDiff" size="254" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="StoreID" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="State" selected="True" />
+            <Field field="Date Last Winter Freeze" selected="True" />
+            <Field field="Date First Winter Freeze" selected="True" />
+            <Field field="Growing Season Length" selected="True" />
+            <Field field="Precip Jan" selected="True" />
+            <Field field="Precip Feb" selected="True" />
+            <Field field="Precip Mar" selected="True" />
+            <Field field="Precip Apr" selected="True" />
+            <Field field="Precip May" selected="True" />
+            <Field field="Precip Jun" selected="True" />
+            <Field field="Precip Jul" selected="True" />
+            <Field field="Precip Aug" selected="True" />
+            <Field field="Precip Sep" selected="True" />
+            <Field field="Precip Oct" selected="True" />
+            <Field field="Precip Nov" selected="True" />
+            <Field field="Precip Dec" selected="True" />
+            <Field field="Rain Jan" selected="True" />
+            <Field field="Rain Feb" selected="True" />
+            <Field field="Rain Mar" selected="True" />
+            <Field field="Rain Apr" selected="True" />
+            <Field field="Rain May" selected="True" />
+            <Field field="Rain Jun" selected="True" />
+            <Field field="Rain Jul" selected="True" />
+            <Field field="Rain Aug" selected="True" />
+            <Field field="Rain Sep" selected="True" />
+            <Field field="Rain Oct" selected="True" />
+            <Field field="Rain Nov" selected="True" />
+            <Field field="Rain Dec" selected="True" />
+            <Field field="Snow Jan" selected="True" />
+            <Field field="Snow Feb" selected="True" />
+            <Field field="Snow Mar" selected="True" />
+            <Field field="Snow Apr" selected="True" />
+            <Field field="Snow May" selected="True" />
+            <Field field="Snow Jun" selected="True" />
+            <Field field="Snow Jul" selected="True" />
+            <Field field="Snow Aug" selected="True" />
+            <Field field="Snow Sep" selected="True" />
+            <Field field="Snow Oct" selected="True" />
+            <Field field="Snow Nov" selected="True" />
+            <Field field="Snow Dec" selected="True" />
+            <Field field="Temp Jan" selected="True" />
+            <Field field="Temp Feb" selected="True" />
+            <Field field="Temp Mar" selected="True" />
+            <Field field="Temp Apr" selected="True" />
+            <Field field="Temp May" selected="True" />
+            <Field field="Temp Jun" selected="True" />
+            <Field field="Temp Jul" selected="True" />
+            <Field field="Temp Aug" selected="True" />
+            <Field field="Temp Sep" selected="True" />
+            <Field field="Temp Oct" selected="True" />
+            <Field field="Temp Nov" selected="True" />
+            <Field field="Temp Dec" selected="True" />
+            <Field field="Elevation" selected="True" />
+            <Field field="Longitude" selected="True" />
+            <Field field="Latitude" selected="True" />
+            <Field field="LastWinterFreezeDiff" selected="True" />
+            <Field field="FirstWinterFreezeDiff" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Int16" />
+            <Field name="City" size="26" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="V_String" />
+            <Field name="State" size="2" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="String" />
+            <Field name="Date Last Winter Freeze" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Date" />
+            <Field name="Date First Winter Freeze" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Date" />
+            <Field name="Growing Season Length" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Int16" />
+            <Field name="Precip Jan" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Feb" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Mar" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Apr" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip May" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Jun" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Jul" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Aug" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Sep" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Oct" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Nov" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Precip Dec" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Jan" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Feb" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Mar" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Apr" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain May" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Jun" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Jul" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Aug" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Sep" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Oct" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Nov" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Rain Dec" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow Jan" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow Feb" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow Mar" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow Apr" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow May" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow Jun" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow Jul" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Byte" />
+            <Field name="Snow Aug" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Byte" />
+            <Field name="Snow Sep" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow Oct" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow Nov" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Snow Dec" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Jan" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Feb" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Mar" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Apr" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp May" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Jun" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Jul" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Aug" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Sep" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Oct" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Nov" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Temp Dec" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Elevation" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Longitude" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="Latitude" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Double" />
+            <Field name="LastWinterFreezeDiff" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Int16" />
+            <Field name="FirstWinterFreezeDiff" source="File: C:\Users\KK\Documents\GitHub\udacity_pand\exercises\data-prep-exercise-results.csv" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="258" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>Temp Oct</Field>
+            <Operator>IsNotNull</Operator>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Temp Oct])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="390" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="fields">Temp Jan + Temp Feb + Temp Mar + Temp Apr + Temp May + Temp Jun + Temp Jul + Temp Aug + Temp Sep + Temp Oct + Temp Nov + Temp Dec</Value>
+          <Value name="scale">True</Value>
+          <Value name="max components">2</Value>
+          <Value name="append pc">True</Value>
+          <Value name="num pc">3</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" source="R-DATA:" type="Int32" />
+            <Field name="City" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="State" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Date.Last.Winter.Freeze" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Date.First.Winter.Freeze" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Growing.Season.Length" source="R-DATA:" type="Int32" />
+            <Field name="Precip.Jan" source="R-DATA:" type="Double" />
+            <Field name="Precip.Feb" source="R-DATA:" type="Double" />
+            <Field name="Precip.Mar" source="R-DATA:" type="Double" />
+            <Field name="Precip.Apr" source="R-DATA:" type="Double" />
+            <Field name="Precip.May" source="R-DATA:" type="Double" />
+            <Field name="Precip.Jun" source="R-DATA:" type="Double" />
+            <Field name="Precip.Jul" source="R-DATA:" type="Double" />
+            <Field name="Precip.Aug" source="R-DATA:" type="Double" />
+            <Field name="Precip.Sep" source="R-DATA:" type="Double" />
+            <Field name="Precip.Oct" source="R-DATA:" type="Double" />
+            <Field name="Precip.Nov" source="R-DATA:" type="Double" />
+            <Field name="Precip.Dec" source="R-DATA:" type="Double" />
+            <Field name="Rain.Jan" source="R-DATA:" type="Double" />
+            <Field name="Rain.Feb" source="R-DATA:" type="Double" />
+            <Field name="Rain.Mar" source="R-DATA:" type="Double" />
+            <Field name="Rain.Apr" source="R-DATA:" type="Double" />
+            <Field name="Rain.May" source="R-DATA:" type="Double" />
+            <Field name="Rain.Jun" source="R-DATA:" type="Double" />
+            <Field name="Rain.Jul" source="R-DATA:" type="Double" />
+            <Field name="Rain.Aug" source="R-DATA:" type="Double" />
+            <Field name="Rain.Sep" source="R-DATA:" type="Double" />
+            <Field name="Rain.Oct" source="R-DATA:" type="Double" />
+            <Field name="Rain.Nov" source="R-DATA:" type="Double" />
+            <Field name="Rain.Dec" source="R-DATA:" type="Double" />
+            <Field name="Snow.Jan" source="R-DATA:" type="Double" />
+            <Field name="Snow.Feb" source="R-DATA:" type="Double" />
+            <Field name="Snow.Mar" source="R-DATA:" type="Double" />
+            <Field name="Snow.Apr" source="R-DATA:" type="Double" />
+            <Field name="Snow.May" source="R-DATA:" type="Double" />
+            <Field name="Snow.Jun" source="R-DATA:" type="Double" />
+            <Field name="Snow.Jul" source="R-DATA:" type="Int32" />
+            <Field name="Snow.Aug" source="R-DATA:" type="Int32" />
+            <Field name="Snow.Sep" source="R-DATA:" type="Double" />
+            <Field name="Snow.Oct" source="R-DATA:" type="Double" />
+            <Field name="Snow.Nov" source="R-DATA:" type="Double" />
+            <Field name="Snow.Dec" source="R-DATA:" type="Double" />
+            <Field name="Temp.Jan" source="R-DATA:" type="Double" />
+            <Field name="Temp.Feb" source="R-DATA:" type="Double" />
+            <Field name="Temp.Mar" source="R-DATA:" type="Double" />
+            <Field name="Temp.Apr" source="R-DATA:" type="Double" />
+            <Field name="Temp.May" source="R-DATA:" type="Double" />
+            <Field name="Temp.Jun" source="R-DATA:" type="Double" />
+            <Field name="Temp.Jul" source="R-DATA:" type="Double" />
+            <Field name="Temp.Aug" source="R-DATA:" type="Double" />
+            <Field name="Temp.Sep" source="R-DATA:" type="Double" />
+            <Field name="Temp.Oct" source="R-DATA:" type="Double" />
+            <Field name="Temp.Nov" source="R-DATA:" type="Double" />
+            <Field name="Temp.Dec" source="R-DATA:" type="Double" />
+            <Field name="Elevation" source="R-DATA:" type="Double" />
+            <Field name="Longitude" source="R-DATA:" type="Double" />
+            <Field name="Latitude" source="R-DATA:" type="Double" />
+            <Field name="LastWinterFreezeDiff" source="R-DATA:" type="Int32" />
+            <Field name="FirstWinterFreezeDiff" source="R-DATA:" type="Int32" />
+            <Field name="PC1" source="R-DATA:" type="Double" />
+            <Field name="PC2" source="R-DATA:" type="Double" />
+            <Field name="PC3" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15696_9f84f77836184fdaabcee3b4a22fc23f_\Engine_7524_3d983aa016b94c98b36482795a4ad69e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="486" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15696_9f84f77836184fdaabcee3b4a22fc23f_\Engine_7524_8641f463d4164c69865c4dba5e33e411_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings>
+        <Position x="390" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="fields">Precip Jan + Precip Feb + Precip Mar + Precip Apr + Precip May + Precip Jun + Precip Jul + Precip Aug + Precip Sep + Precip Oct + Precip Nov + Precip Dec</Value>
+          <Value name="scale">True</Value>
+          <Value name="max components">2</Value>
+          <Value name="append pc">True</Value>
+          <Value name="num pc">3</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings>
+        <Position x="438" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="fields">Snow Jan + Snow Feb + Snow Mar + Snow Apr + Snow May + Snow Jun + Snow Jul + Snow Aug + Snow Sep + Snow Oct + Snow Nov + Snow Dec</Value>
+          <Value name="scale">True</Value>
+          <Value name="max components">2</Value>
+          <Value name="append pc">True</Value>
+          <Value name="num pc">3</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings>
+        <Position x="486" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="fields">Rain Jan + Rain Feb + Rain Mar + Rain Apr + Rain May + Rain Jun + Rain Jul + Rain Aug + Rain Sep + Rain Oct + Rain Nov + Rain Dec</Value>
+          <Value name="scale">True</Value>
+          <Value name="max components">2</Value>
+          <Value name="append pc">True</Value>
+          <Value name="num pc">3</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="4" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="7" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="8" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="9" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Reports" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>pcaEx</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -2,9 +2,8 @@
 
 
 # files to ignore
-*.tde
-*.yxmd
-
+# *.tde
+# *.yxmd
 
 
 # reference sites

@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.3">
+  <Nodes>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="329.9999" width="1622" height="521.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 30</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79.00024" y="374" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">..\files\PCA.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PCA.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Country_Code" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Country_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Long_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Table_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="PC1" source="R-DATA:" type="Double" />
+                <Field name="PC2" source="R-DATA:" type="Double" />
+                <Field name="PC3" source="R-DATA:" type="Double" />
+                <Field name="PC4" source="R-DATA:" type="Double" />
+                <Field name="Input_#2_PC1" source="R-DATA:" type="Double" />
+                <Field name="Input_#2_PC2" source="R-DATA:" type="Double" />
+                <Field name="Input_#2_PC3" source="R-DATA:" type="Double" />
+                <Field name="Input_#2_PC4" source="R-DATA:" type="Double" />
+                <Field name="Input_#3_PC1" source="R-DATA:" type="Double" />
+                <Field name="Input_#3_PC2" source="R-DATA:" type="Double" />
+                <Field name="Input_#3_PC3" source="R-DATA:" type="Double" />
+                <Field name="Input_#3_PC4" source="R-DATA:" type="Double" />
+                <Field name="EG_ELC_ACCS_ZS" source="CrossTab:Header:Name:EG_ELC_ACCS_ZS:Sum:" type="Double" />
+                <Field name="EN_POP_SLUM_UR_ZS" source="CrossTab:Header:Name:EN_POP_SLUM_UR_ZS:Sum:" type="Double" />
+                <Field name="FB_ATM_TOTL_P5" source="CrossTab:Header:Name:FB_ATM_TOTL_P5:Sum:" type="Double" />
+                <Field name="IC_ELC_TIME" source="CrossTab:Header:Name:IC_ELC_TIME:Sum:" type="Double" />
+                <Field name="IC_FRM_ISOC_ZS" source="CrossTab:Header:Name:IC_FRM_ISOC_ZS:Sum:" type="Double" />
+                <Field name="IC_TAX_TOTL_CP_ZS" source="CrossTab:Header:Name:IC_TAX_TOTL_CP_ZS:Sum:" type="Double" />
+                <Field name="IQ_WEF_PORT_XQ" source="CrossTab:Header:Name:IQ_WEF_PORT_XQ:Sum:" type="Double" />
+                <Field name="SE_XPD_TOTL_GD_ZS" source="CrossTab:Header:Name:SE_XPD_TOTL_GD_ZS:Sum:" type="Double" />
+                <Field name="SL_EMP_TOTL_SP_ZS" source="CrossTab:Header:Name:SL_EMP_TOTL_SP_ZS:Sum:" type="Double" />
+                <Field name="SL_TLF_SECO_ZS" source="CrossTab:Header:Name:SL_TLF_SECO_ZS:Sum:" type="Double" />
+                <Field name="SL_TLF_TOTL_IN" source="CrossTab:Header:Name:SL_TLF_TOTL_IN:Sum:" type="Double" />
+                <Field name="TM_TAX_MANF_SM_FN_ZS" source="CrossTab:Header:Name:TM_TAX_MANF_SM_FN_ZS:Sum:" type="Double" />
+                <Field name="UIS_PTRHC_2" source="CrossTab:Header:Name:UIS_PTRHC_2:Sum:" type="Double" />
+                <Field name="UIS_PTRHC_3" source="CrossTab:Header:Name:UIS_PTRHC_3:Sum:" type="Double" />
+                <Field name="UIS_PTRHC_56" source="CrossTab:Header:Name:UIS_PTRHC_56:Sum:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings>
+            <Position x="175.0002" y="374.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="model name">NeuralGas</Value>
+              <Value name="the fields">PC1 + PC2 + Input_#2_PC1 + Input_#2_PC2 + Input_#2_PC3 + Input_#2_PC4 + Input_#3_PC1 + EG_ELC_ACCS_ZS + EN_POP_SLUM_UR_ZS + FB_ATM_TOTL_P5 + IC_ELC_TIME + IC_FRM_ISOC_ZS + IC_TAX_TOTL_CP_ZS + IQ_WEF_PORT_XQ + SE_XPD_TOTL_GD_ZS + SL_EMP_TOTL_SP_ZS + SL_TLF_SECO_ZS + SL_TLF_TOTL_IN + TM_TAX_MANF_SM_FN_ZS + UIS_PTRHC_2 + UIS_PTRHC_3 + UIS_PTRHC_56</Value>
+              <Value name="standardize">True</Value>
+              <Value name="z score">True</Value>
+              <Value name="unit interval">False</Value>
+              <Value name="k-means">False</Value>
+              <Value name="k-medians">False</Value>
+              <Value name="neural gas">True</Value>
+              <Value name="num clus">4</Value>
+              <Value name="num seeds">10</Value>
+              <Value name="plot points">True</Value>
+              <Value name="plot centroids">False</Value>
+              <Value name="max comp">2</Value>
+              <Value name="inches">True</Value>
+              <Value name="in.w">5.50</Value>
+              <Value name="in.h">5.50</Value>
+              <Value name="centimeters">False</Value>
+              <Value name="cm.w">13.00</Value>
+              <Value name="cm.h">14.95</Value>
+              <Value name="graph.resolution">1x</Value>
+              <Value name="pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="grp" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="out" size="1073741823" source="R-DATA:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Reports">
+              <RecordInfo>
+                <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+                <Field name="Sum_Dists" size="1073741823" source="R-DATA:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\K-Centroids_Cluster_Analysis.yxmc" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="271" y="434.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16576_c1d8a5591840492689b182c637a5e65f_\Engine_16180_170925f6d2fb42ca83717764b9c09e85_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings>
+            <Position x="343.0002" y="373.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="clus name">Cluster</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Country_Code" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Country_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Long_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="Table_Name" size="1073741823" source="R-DATA:" type="V_WString" />
+                <Field name="PC1" source="R-DATA:" type="Double" />
+                <Field name="PC2" source="R-DATA:" type="Double" />
+                <Field name="PC3" source="R-DATA:" type="Double" />
+                <Field name="PC4" source="R-DATA:" type="Double" />
+                <Field name="Input_.2_PC1" source="R-DATA:" type="Double" />
+                <Field name="Input_.2_PC2" source="R-DATA:" type="Double" />
+                <Field name="Input_.2_PC3" source="R-DATA:" type="Double" />
+                <Field name="Input_.2_PC4" source="R-DATA:" type="Double" />
+                <Field name="Input_.3_PC1" source="R-DATA:" type="Double" />
+                <Field name="Input_.3_PC2" source="R-DATA:" type="Double" />
+                <Field name="Input_.3_PC3" source="R-DATA:" type="Double" />
+                <Field name="Input_.3_PC4" source="R-DATA:" type="Double" />
+                <Field name="EG_ELC_ACCS_ZS" source="R-DATA:" type="Double" />
+                <Field name="EN_POP_SLUM_UR_ZS" source="R-DATA:" type="Double" />
+                <Field name="FB_ATM_TOTL_P5" source="R-DATA:" type="Double" />
+                <Field name="IC_ELC_TIME" source="R-DATA:" type="Double" />
+                <Field name="IC_FRM_ISOC_ZS" source="R-DATA:" type="Double" />
+                <Field name="IC_TAX_TOTL_CP_ZS" source="R-DATA:" type="Double" />
+                <Field name="IQ_WEF_PORT_XQ" source="R-DATA:" type="Double" />
+                <Field name="SE_XPD_TOTL_GD_ZS" source="R-DATA:" type="Double" />
+                <Field name="SL_EMP_TOTL_SP_ZS" source="R-DATA:" type="Double" />
+                <Field name="SL_TLF_SECO_ZS" source="R-DATA:" type="Double" />
+                <Field name="SL_TLF_TOTL_IN" source="R-DATA:" type="Double" />
+                <Field name="TM_TAX_MANF_SM_FN_ZS" source="R-DATA:" type="Double" />
+                <Field name="UIS_PTRHC_2" source="R-DATA:" type="Double" />
+                <Field name="UIS_PTRHC_3" source="R-DATA:" type="Double" />
+                <Field name="UIS_PTRHC_56" source="R-DATA:" type="Double" />
+                <Field name="Cluster" source="R-DATA:" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Append_Cluster.yxmc" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="462.9998" y="374.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Country_Name" selected="False" />
+                <SelectField field="Long_Name" selected="False" />
+                <SelectField field="Table_Name" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="463" y="434" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File>..\files\countryInfo.yxdb</File>
+              <Passwords />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>countryInfo.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Country_Code" size="23" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="Country_Name" size="30" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="Long_Name" size="73" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="Table_Name" size="30" source="CrossTab:Group:Sum:" type="V_String" />
+                <Field name="BAR_SCHL_1519" source="CrossTab:Header:Name:BAR_SCHL_1519:Sum:" type="Double" />
+                <Field name="BAR_SCHL_1519_FE" source="CrossTab:Header:Name:BAR_SCHL_1519_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_15UP" source="CrossTab:Header:Name:BAR_SCHL_15UP:Sum:" type="Double" />
+                <Field name="BAR_SCHL_15UP_FE" source="CrossTab:Header:Name:BAR_SCHL_15UP_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_2024" source="CrossTab:Header:Name:BAR_SCHL_2024:Sum:" type="Double" />
+                <Field name="BAR_SCHL_2024_FE" source="CrossTab:Header:Name:BAR_SCHL_2024_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_2529" source="CrossTab:Header:Name:BAR_SCHL_2529:Sum:" type="Double" />
+                <Field name="BAR_SCHL_2529_FE" source="CrossTab:Header:Name:BAR_SCHL_2529_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_25UP" source="CrossTab:Header:Name:BAR_SCHL_25UP:Sum:" type="Double" />
+                <Field name="BAR_SCHL_25UP_FE" source="CrossTab:Header:Name:BAR_SCHL_25UP_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_3034" source="CrossTab:Header:Name:BAR_SCHL_3034:Sum:" type="Double" />
+                <Field name="BAR_SCHL_3034_FE" source="CrossTab:Header:Name:BAR_SCHL_3034_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_3539" source="CrossTab:Header:Name:BAR_SCHL_3539:Sum:" type="Double" />
+                <Field name="BAR_SCHL_3539_FE" source="CrossTab:Header:Name:BAR_SCHL_3539_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_4044" source="CrossTab:Header:Name:BAR_SCHL_4044:Sum:" type="Double" />
+                <Field name="BAR_SCHL_4044_FE" source="CrossTab:Header:Name:BAR_SCHL_4044_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_4549" source="CrossTab:Header:Name:BAR_SCHL_4549:Sum:" type="Double" />
+                <Field name="BAR_SCHL_4549_FE" source="CrossTab:Header:Name:BAR_SCHL_4549_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_5054" source="CrossTab:Header:Name:BAR_SCHL_5054:Sum:" type="Double" />
+                <Field name="BAR_SCHL_5054_FE" source="CrossTab:Header:Name:BAR_SCHL_5054_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_5559" source="CrossTab:Header:Name:BAR_SCHL_5559:Sum:" type="Double" />
+                <Field name="BAR_SCHL_5559_FE" source="CrossTab:Header:Name:BAR_SCHL_5559_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_6064" source="CrossTab:Header:Name:BAR_SCHL_6064:Sum:" type="Double" />
+                <Field name="BAR_SCHL_6064_FE" source="CrossTab:Header:Name:BAR_SCHL_6064_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_6569" source="CrossTab:Header:Name:BAR_SCHL_6569:Sum:" type="Double" />
+                <Field name="BAR_SCHL_6569_FE" source="CrossTab:Header:Name:BAR_SCHL_6569_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_7074" source="CrossTab:Header:Name:BAR_SCHL_7074:Sum:" type="Double" />
+                <Field name="BAR_SCHL_7074_FE" source="CrossTab:Header:Name:BAR_SCHL_7074_FE:Sum:" type="Double" />
+                <Field name="BAR_SCHL_75UP" source="CrossTab:Header:Name:BAR_SCHL_75UP:Sum:" type="Double" />
+                <Field name="BAR_SCHL_75UP_FE" source="CrossTab:Header:Name:BAR_SCHL_75UP_FE:Sum:" type="Double" />
+                <Field name="EG_ELC_ACCS_ZS" source="CrossTab:Header:Name:EG_ELC_ACCS_ZS:Sum:" type="Double" />
+                <Field name="EN_POP_SLUM_UR_ZS" source="CrossTab:Header:Name:EN_POP_SLUM_UR_ZS:Sum:" type="Double" />
+                <Field name="FB_ATM_TOTL_P5" source="CrossTab:Header:Name:FB_ATM_TOTL_P5:Sum:" type="Double" />
+                <Field name="IC_ELC_TIME" source="CrossTab:Header:Name:IC_ELC_TIME:Sum:" type="Double" />
+                <Field name="IC_FRM_ISOC_ZS" source="CrossTab:Header:Name:IC_FRM_ISOC_ZS:Sum:" type="Double" />
+                <Field name="IC_TAX_TOTL_CP_ZS" source="CrossTab:Header:Name:IC_TAX_TOTL_CP_ZS:Sum:" type="Double" />
+                <Field name="IQ_WEF_PORT_XQ" source="CrossTab:Header:Name:IQ_WEF_PORT_XQ:Sum:" type="Double" />
+                <Field name="SE_ADT_1524_LT_FE_ZS" source="CrossTab:Header:Name:SE_ADT_1524_LT_FE_ZS:Sum:" type="Double" />
+                <Field name="SE_ADT_1524_LT_FM_ZS" source="CrossTab:Header:Name:SE_ADT_1524_LT_FM_ZS:Sum:" type="Double" />
+                <Field name="SE_ADT_1524_LT_MA_ZS" source="CrossTab:Header:Name:SE_ADT_1524_LT_MA_ZS:Sum:" type="Double" />
+                <Field name="SE_ADT_1524_LT_ZS" source="CrossTab:Header:Name:SE_ADT_1524_LT_ZS:Sum:" type="Double" />
+                <Field name="SE_ADT_LITR_FE_ZS" source="CrossTab:Header:Name:SE_ADT_LITR_FE_ZS:Sum:" type="Double" />
+                <Field name="SE_ADT_LITR_MA_ZS" source="CrossTab:Header:Name:SE_ADT_LITR_MA_ZS:Sum:" type="Double" />
+                <Field name="SE_ADT_LITR_ZS" source="CrossTab:Header:Name:SE_ADT_LITR_ZS:Sum:" type="Double" />
+                <Field name="SE_XPD_TOTL_GD_ZS" source="CrossTab:Header:Name:SE_XPD_TOTL_GD_ZS:Sum:" type="Double" />
+                <Field name="SL_EMP_TOTL_SP_ZS" source="CrossTab:Header:Name:SL_EMP_TOTL_SP_ZS:Sum:" type="Double" />
+                <Field name="SL_TLF_SECO_ZS" source="CrossTab:Header:Name:SL_TLF_SECO_ZS:Sum:" type="Double" />
+                <Field name="SL_TLF_TOTL_IN" source="CrossTab:Header:Name:SL_TLF_TOTL_IN:Sum:" type="Double" />
+                <Field name="TM_TAX_MANF_SM_FN_ZS" source="CrossTab:Header:Name:TM_TAX_MANF_SM_FN_ZS:Sum:" type="Double" />
+                <Field name="UIS_EA_1T6_AG25T99" source="CrossTab:Header:Name:UIS_EA_1T6_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_1_AG25T99" source="CrossTab:Header:Name:UIS_EA_1_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_2T6_AG25T99" source="CrossTab:Header:Name:UIS_EA_2T6_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_2_AG25T99" source="CrossTab:Header:Name:UIS_EA_2_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_3T6_AG25T99" source="CrossTab:Header:Name:UIS_EA_3T6_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_3_AG25T99" source="CrossTab:Header:Name:UIS_EA_3_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_4T6_AG25T99" source="CrossTab:Header:Name:UIS_EA_4T6_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_4_AG25T99" source="CrossTab:Header:Name:UIS_EA_4_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_5T8_AG25T99" source="CrossTab:Header:Name:UIS_EA_5T8_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_5_AG25T99" source="CrossTab:Header:Name:UIS_EA_5_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_6T8_AG25T99" source="CrossTab:Header:Name:UIS_EA_6T8_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_6_AG25T99" source="CrossTab:Header:Name:UIS_EA_6_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_7T8_AG25T99" source="CrossTab:Header:Name:UIS_EA_7T8_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_7_AG25T99" source="CrossTab:Header:Name:UIS_EA_7_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_EA_8_AG25T99" source="CrossTab:Header:Name:UIS_EA_8_AG25T99:Sum:" type="Double" />
+                <Field name="UIS_PTRHC_2" source="CrossTab:Header:Name:UIS_PTRHC_2:Sum:" type="Double" />
+                <Field name="UIS_PTRHC_3" source="CrossTab:Header:Name:UIS_PTRHC_3:Sum:" type="Double" />
+                <Field name="UIS_PTRHC_56" source="CrossTab:Header:Name:UIS_PTRHC_56:Sum:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="595" y="374" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Country_Code" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Country_Code" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Country_Code" selected="False" />
+                    <SelectField field="Right_EG_ELC_ACCS_ZS" selected="False" rename="Right_EG_ELC_ACCS_ZS" />
+                    <SelectField field="Right_EN_POP_SLUM_UR_ZS" selected="False" rename="Right_EN_POP_SLUM_UR_ZS" />
+                    <SelectField field="Right_FB_ATM_TOTL_P5" selected="False" rename="Right_FB_ATM_TOTL_P5" />
+                    <SelectField field="Right_IC_ELC_TIME" selected="False" rename="Right_IC_ELC_TIME" />
+                    <SelectField field="Right_IC_FRM_ISOC_ZS" selected="False" rename="Right_IC_FRM_ISOC_ZS" />
+                    <SelectField field="Right_IC_TAX_TOTL_CP_ZS" selected="False" rename="Right_IC_TAX_TOTL_CP_ZS" />
+                    <SelectField field="Right_IQ_WEF_PORT_XQ" selected="False" rename="Right_IQ_WEF_PORT_XQ" />
+                    <SelectField field="Right_SE_XPD_TOTL_GD_ZS" selected="False" rename="Right_SE_XPD_TOTL_GD_ZS" />
+                    <SelectField field="Right_SL_EMP_TOTL_SP_ZS" selected="False" rename="Right_SL_EMP_TOTL_SP_ZS" />
+                    <SelectField field="Right_SL_TLF_SECO_ZS" selected="False" rename="Right_SL_TLF_SECO_ZS" />
+                    <SelectField field="Right_SL_TLF_TOTL_IN" selected="False" rename="Right_SL_TLF_TOTL_IN" />
+                    <SelectField field="Right_TM_TAX_MANF_SM_FN_ZS" selected="False" rename="Right_TM_TAX_MANF_SM_FN_ZS" />
+                    <SelectField field="Right_UIS_PTRHC_2" selected="False" rename="Right_UIS_PTRHC_2" />
+                    <SelectField field="Right_UIS_PTRHC_3" selected="False" rename="Right_UIS_PTRHC_3" />
+                    <SelectField field="Right_UIS_PTRHC_56" selected="False" rename="Right_UIS_PTRHC_56" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1255" y="374" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="42" MaxRecords="">..\files\clusters.tde</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>clusters.tde</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="690" y="666" width="409" height="160" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container Countries Clustered with USA</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="24">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="715" y="710" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>Cluster</Field>
+                    <Operator>=</Operator>
+                    <Operands>
+                      <Operand>4</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>[Cluster] = 4</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="25">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="823" y="710" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Country_Code" selected="True" />
+                    <SelectField field="Country_Name" selected="True" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="26">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="919" y="710" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="0">
+                    <Field field="Country_Code" order="Ascending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Country_Code - Ascending</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+            <Node ToolID="27">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1015" y="710" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16576_c1d8a5591840492689b182c637a5e65f_\Engine_16180_fdb7d59745a6459584c4ef7fe715f990_.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Profile</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="678" y="425.9999" width="973" height="247.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="31">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="703" y="482.0001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>Country_Code</Field>
+                    <Operator>=</Operator>
+                    <Operands>
+                      <Operand>USA</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>[Country_Code] = "USA"</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="32">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="787" y="469.9999" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="FB_ATM_TOTL_P5" selected="True" rename="USA_ATM" />
+                    <SelectField field="IC_TAX_TOTL_CP_ZS" selected="True" rename="USA_TAX" />
+                    <SelectField field="Country_Code" selected="True" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="34">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1099" y="482" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="([USA_ATM]-[FB_ATM_TOTL_P5])*([USA_ATM]-[FB_ATM_TOTL_P5])+([USA_TAX]-[IC_TAX_TOTL_CP_ZS])*([USA_TAX]-[IC_TAX_TOTL_CP_ZS])&#xA;/*&#xA;d=SQRT((([USA_ATM]-[FB_ATM_TOTL_P5])^2)+(([USA_TAX]-[IC_TAX_TOTL_CP_ZS])^2))&#xA;*/" field="DISTANCE" size="8" type="Double" />
+                    <FormulaField expression="SQRT([DISTANCE])" field="DISTANCE" size="8" type="Double" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>DISTANCE = ([USA_ATM]-[FB_ATM_TOTL_P5])*([USA_ATM]-[FB_ATM_TOTL_P5])+([USA_TAX]-...</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="37">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+                <Position x="1195" y="482" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SortInfo locale="0">
+                    <Field field="DISTANCE" order="Ascending" />
+                  </SortInfo>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>DISTANCE - Ascending</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+            </Node>
+            <Node ToolID="38">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1387" y="482" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>RecordID</Field>
+                    <Operator>&lt;=</Operator>
+                    <Operands>
+                      <Operand>5</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>[RecordID] &lt;= 5</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="39">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+                <Position x="1291" y="482" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FieldName>RecordID</FieldName>
+                  <StartValue>1</StartValue>
+                  <FieldType>Int32</FieldType>
+                  <FieldSize>6</FieldSize>
+                  <Position>0</Position>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+            </Node>
+            <Node ToolID="40">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="1003" y="482" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Field>Cluster</Field>
+                    <Operator>=</Operator>
+                    <Operands>
+                      <Operand>4</Operand>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>[Cluster] = 4</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="41">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+                <Position x="895" y="482" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <CartesianMode>Error</CartesianMode>
+                  <SelectConfiguration>
+                    <Configuration outputConnection="Output">
+                      <OrderChanged value="False" />
+                      <CommaDecimal value="False" />
+                      <SelectFields>
+                        <SelectField field="Source_Country_Code" selected="False" rename="Source_Country_Code" />
+                        <SelectField field="*Unknown" selected="True" />
+                      </SelectFields>
+                    </Configuration>
+                  </SelectConfiguration>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+            </Node>
+            <Node ToolID="42">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+                <Position x="1471" y="482" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <FormulaFields>
+                    <FormulaField expression="1" field="is_close" size="2" type="Int16" />
+                  </FormulaFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText><![CDATA[is_close = 1
+]]></DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+            </Node>
+            <Node ToolID="47">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+                <Position x="1567" y="482" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+                  <ByName_OutputMode>All</ByName_OutputMode>
+                  <Mode>ByName</Mode>
+                  <SetOutputOrder value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="First Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Second Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Reports" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="41" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="41" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="True" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="38" Connection="False" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="40" Connection="False" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>p7_step3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

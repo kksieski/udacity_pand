@@ -1,0 +1,988 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="10.5">
+  <Nodes>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="906" y="294" width="132" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>All original Master records with new Campaign field attached</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="630" y="246" width="240" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Records matched to Master db have the new Campaign field appended with a 1.  The rest of the records which did not match are unioned back in.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="246" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="HHID" source="RecordID: Starting Value=200000000" type="Int32" column="1" />
+                <Field name="Primary_Address" size="254" source="(Multiple Sources)" type="V_String" column="2" />
+                <Field name="ZIP" size="254" source="(Multiple Sources)" type="V_String" column="3" />
+                <Field name="LastName" size="254" source="(Multiple Sources)" type="V_String" column="4" />
+                <Field name="2013-01-15" source="(Multiple Sources)" type="Double" column="5" />
+                <Field name="Source" size="64" source="Formula: &quot;Customer&quot;" type="String" column="6" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" column="1" />
+                <Field name="Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" column="2" />
+                <Field name="ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" column="3" />
+                <Field name="LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" column="4" />
+                <Field name="SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" column="6" />
+                <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" column="7" />
+                <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" column="8" />
+                <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" column="9" />
+                <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" column="10" />
+                <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" column="11" />
+                <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" column="12" />
+                <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" column="13" />
+                <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" column="14" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>Manual</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: (Multiple Sources)" type="Int32" />
+            <Field name="Primary_Address" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="ZIP" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="LastName" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="2013-01-15" source="(Multiple Sources)" type="Double" />
+            <Field name="SOURCE" size="64" source="Formula: (Multiple Sources)" type="String" />
+            <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FuzzyMatch.FuzzyMatch">
+        <Position x="330" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RecordIdField>HHID</RecordIdField>
+          <MatchThreshold value="60" />
+          <OutputScore value="False" />
+          <OutputKey value="False" />
+          <OutputUnmatched value="False" />
+          <OutputMakeGroup value="False" />
+          <GenerateKeys value="False" />
+          <MatchFields>
+            <MatchField>
+              <FieldName>Primary_Address</FieldName>
+              <Style Name="Address">
+                <PreProcess name="Strip Punctuation">
+                  <Search>(['-])|(\s?[[:punct:]]\s?)</Search>
+                  <Replace>(?2 :)</Replace>
+                </PreProcess>
+                <KeyGeneration>
+                  <KeyFunction>DblMetaphoneDigits</KeyFunction>
+                  <UseWords value="False" />
+                  <IgnoreEmpty value="True" />
+                  <MaxKeyLen value="8" />
+                </KeyGeneration>
+                <Match>
+                  <MatchFunction>JaroTFIDF_Digits</MatchFunction>
+                  <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                  <WordStats>US Address.yxdb</WordStats>
+                  <MatchThreshold value="85" />
+                  <MatchWeight value="100" />
+                </Match>
+              </Style>
+            </MatchField>
+            <MatchField>
+              <FieldName>ZIP</FieldName>
+              <Style Name="ZIP Code">
+                <KeyGeneration>
+                  <KeyFunction>Digits</KeyFunction>
+                  <UseWords value="False" />
+                  <IgnoreEmpty value="True" />
+                  <MaxKeyLen value="5" />
+                </KeyGeneration>
+                <Match>
+                  <MatchFunction>None</MatchFunction>
+                  <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                  <WordStats />
+                  <MatchThreshold value="80" />
+                  <MatchWeight value="100" />
+                </Match>
+              </Style>
+            </MatchField>
+            <MatchField>
+              <FieldName>LastName</FieldName>
+              <Style Name="Name">
+                <PreProcess name="Strip Punctuation">
+                  <Search>(['-])|(\s?[[:punct:]]\s?)</Search>
+                  <Replace>(?2 :)</Replace>
+                </PreProcess>
+                <KeyGeneration>
+                  <KeyFunction>DblMetaphone</KeyFunction>
+                  <UseWords value="True" />
+                  <IgnoreWords />
+                  <IgnoreSingleLetterWords value="True" />
+                  <IgnoreEmpty value="True" />
+                  <MaxKeyLen value="4" />
+                </KeyGeneration>
+                <Match>
+                  <MatchFunction>JaroTFIDF</MatchFunction>
+                  <AdditionalMatchFunction>NoSpace</AdditionalMatchFunction>
+                  <WordStats />
+                  <NicknameFile />
+                  <NicknamePenalty value="15" />
+                  <MatchThreshold value="85" />
+                  <MatchWeight value="100" />
+                </Match>
+              </Style>
+            </MatchField>
+          </MatchFields>
+          <MergeMode value="True" />
+          <SourceIdField>SOURCE</SourceIdField>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: (Multiple Sources)" type="Int32" />
+            <Field name="HHID2" source="RecordID: (Multiple Sources)" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFuzzyMatch" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11852_ffa8cf13cc8a47b492935fed13f230e9_\Engine_12100_5438843fae1140caaedbe19a4caa2448_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="510" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="HHID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="HHID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Left_ZIP" selected="True" rename="Master_ZIP" />
+                <SelectField field="Left_Primary_Address" selected="True" rename="Master_Primary_Address" />
+                <SelectField field="Left_LastName" selected="True" rename="Master_LastName" />
+                <SelectField field="Left_SOURCE" selected="True" rename="Master_SOURCE" />
+                <SelectField field="Right_HHID" selected="False" rename="Right_HHID" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" />
+            <Field name="ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" />
+            <Field name="Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" />
+            <Field name="LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" />
+            <Field name="SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" />
+            <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="HHID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" />
+            <Field name="Master_ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" />
+            <Field name="Master_Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" />
+            <Field name="Master_LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" />
+            <Field name="Master_SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" />
+            <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="HHID2" source="RecordID: (Multiple Sources)" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="HHID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: (Multiple Sources)" type="Int32" />
+            <Field name="HHID2" source="RecordID: (Multiple Sources)" type="Int32" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="HHID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="414" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="HHID" />
+            <Field field="HHID2" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: HHID, HHID2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: (Multiple Sources)" type="Int32" />
+            <Field name="HHID2" source="RecordID: (Multiple Sources)" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="HHID" order="Asc" />
+            <Field field="HHID2" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: (Multiple Sources)" type="Int32" />
+            <Field name="HHID2" source="RecordID: (Multiple Sources)" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="HHID" order="Asc" />
+            <Field field="HHID2" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Customer.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Customer.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: Starting Value=200000000" type="Int32" />
+            <Field name="Primary_Address" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="ZIP" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="LastName" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="2013-01-15" source="(Multiple Sources)" type="Double" />
+            <Field name="Source" size="64" source="Formula: &quot;Customer&quot;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Master.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Master.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" />
+            <Field name="ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" />
+            <Field name="Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" />
+            <Field name="LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" />
+            <Field name="SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" />
+            <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="150" y="570" width="432" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>C:\Program Files\Alteryx\bin\RuntimeData\FuzzyMatch\Nicknames</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="606" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="HHID2" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="HHID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="Left_HHID" selected="True" />
+                <SelectField field="Left_Master_ZIP" selected="True" />
+                <SelectField field="Right_ZIP" selected="True" rename="Customer_ZIP" />
+                <SelectField field="Left_Master_Primary_Address" selected="True" />
+                <SelectField field="Right_Primary_Address" selected="True" rename="Customer_Primary_Address" />
+                <SelectField field="Left_Master_LastName" selected="True" />
+                <SelectField field="Right_LastName" selected="True" rename="Customer_LastName" />
+                <SelectField field="Left_Master_SOURCE" selected="True" />
+                <SelectField field="Left_2011-01-15" selected="True" />
+                <SelectField field="Left_2011-04-15" selected="True" />
+                <SelectField field="Left_2011-07-15" selected="True" />
+                <SelectField field="Left_2011-10-15" selected="True" />
+                <SelectField field="Left_2012-01-15" selected="True" />
+                <SelectField field="Left_2012-04-15" selected="True" />
+                <SelectField field="Left_2012-07-15" selected="True" />
+                <SelectField field="Left_2012-10-15" selected="True" />
+                <SelectField field="Left_HHID2" selected="True" />
+                <SelectField field="Right_HHID" selected="False" rename="Right_HHID" />
+                <SelectField field="Right_2013-01-15" selected="True" />
+                <SelectField field="Right_Source" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" />
+            <Field name="Master_ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" />
+            <Field name="Master_Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" />
+            <Field name="Master_LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" />
+            <Field name="Master_SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" />
+            <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="HHID2" source="RecordID: (Multiple Sources)" type="Int32" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="HHID2" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" />
+            <Field name="Master_ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" />
+            <Field name="Customer_ZIP" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="Master_Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" />
+            <Field name="Customer_Primary_Address" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="Master_LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" />
+            <Field name="Customer_LastName" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="Master_SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" />
+            <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="HHID2" source="RecordID: (Multiple Sources)" type="Int32" />
+            <Field name="2013-01-15" source="(Multiple Sources)" type="Double" />
+            <Field name="Source" size="64" source="Formula: &quot;Customer&quot;" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="HHID2" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: Starting Value=200000000" type="Int32" />
+            <Field name="Primary_Address" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="ZIP" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="LastName" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="2013-01-15" source="(Multiple Sources)" type="Double" />
+            <Field name="Source" size="64" source="Formula: &quot;Customer&quot;" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="HHID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="150" y="606" width="480" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Settings: C:\Program Files\Alteryx\bin\RuntimeData\FuzzyMatch\FuzzyMatchStyles.xml</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11852_ffa8cf13cc8a47b492935fed13f230e9_\Engine_12100_4cff38c7c59d4c4781d190d7c9feb37a_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="186" width="156" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Master database of all people who have been contacted in the past for Direct Mktg campaigns</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="342" width="100" height="64" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Customers who were contacted on the last Direct Mktg campaign</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="306" y="258" width="100" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Fuzzy Match on address, ZIP and last name</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="426" width="100" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Multiple matches can result so getting a unique list of records by HHID</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="642" y="606" width="132" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Result of Fuzzy Matching:  HHID from Master which matches HHID from Customer file and match scores
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="438" y="258" width="124" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Joining to add name and address attributes back on from Master</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="282" y="54" width="780" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Goal:  To match records from the Customers file to the Master database, to identify which customers participated in the last Direct Mktg Campaign.
+
+The Customers file contains records of persons who were contacted on the last Direct Mktg campaign.  The Master database contains all customers with fields identifying which compaigns they have been contacted for.</Text>
+          <Font name="Segoe UI" size="12" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="318" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11852_ffa8cf13cc8a47b492935fed13f230e9_\Engine_12100_d754a639e9b840a88150cb0735a1268a_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="738" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>Custom</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" column="1" />
+                <Field name="ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" column="2" />
+                <Field name="Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" column="3" />
+                <Field name="LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" column="5" />
+                <Field name="SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" column="7" />
+                <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" column="11" />
+                <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" column="12" />
+                <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" column="13" />
+                <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" column="14" />
+                <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" column="15" />
+                <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" column="16" />
+                <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" column="17" />
+                <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" column="18" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" column="1" />
+                <Field name="Master_ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" column="2" />
+                <Field name="Master_Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" column="3" />
+                <Field name="Customer_Primary_Address" size="254" source="(Multiple Sources)" type="V_String" column="4" />
+                <Field name="Master_LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" column="5" />
+                <Field name="Customer_LastName" size="254" source="(Multiple Sources)" type="V_String" column="6" />
+                <Field name="Master_SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" column="7" />
+                <Field name="HHID2" source="RecordID: (Multiple Sources)" type="Int32" column="8" />
+                <Field name="Customer_ZIP" size="254" source="(Multiple Sources)" type="V_String" column="9" />
+                <Field name="Source" size="64" source="Formula: &quot;Customer&quot;" type="String" column="10" />
+                <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" column="11" />
+                <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" column="12" />
+                <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" column="13" />
+                <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" column="14" />
+                <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" column="15" />
+                <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" column="16" />
+                <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" column="17" />
+                <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" column="18" />
+                <Field name="2013-01-15" source="(Multiple Sources)" type="Double" column="19" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" />
+            <Field name="Master_ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" />
+            <Field name="Master_Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" />
+            <Field name="Customer_Primary_Address" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="Master_LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" />
+            <Field name="Customer_LastName" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="Master_SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" />
+            <Field name="HHID2" source="RecordID: (Multiple Sources)" type="Int32" />
+            <Field name="Customer_ZIP" size="254" source="(Multiple Sources)" type="V_String" />
+            <Field name="Source" size="64" source="Formula: &quot;Customer&quot;" type="String" />
+            <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2013-01-15" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Customer_Primary_Address" selected="False" />
+            <SelectField field="Customer_LastName" selected="False" />
+            <SelectField field="HHID2" selected="False" />
+            <SelectField field="Customer_ZIP" selected="False" />
+            <SelectField field="Source" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HHID" source="RecordID: Starting Value=100000000" type="Int32" />
+            <Field name="Master_ZIP" size="5" source="Formula: &quot;8&quot; + substring([Zip Code],1,4)" type="String" />
+            <Field name="Master_Primary_Address" size="30" source="Formula: TRIM([Primary Address])" type="String" />
+            <Field name="Master_LastName" size="20" source="Formula: if ISNULL([LastName]) then &quot;&quot; else [LastName] endif" type="String" />
+            <Field name="Master_SOURCE" size="10" source="Formula: &quot;MASTER&quot;" type="String" />
+            <Field name="2011-01-15" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="2011-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2011-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-01-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-04-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-07-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2012-10-15" source="Formula: RandInt(1)" type="Double" />
+            <Field name="2013-01-15" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="52" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="52" Connection="Right" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="13" Connection="Left" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="52" Connection="Join" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Unique" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FuzzyMatching</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
